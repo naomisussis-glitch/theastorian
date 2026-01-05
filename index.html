@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The Astorian is a literary journal devoted to form, measure, and lasting prose." />
+  <meta name="description" content="The Astorian is a literary journal devoted to lasting prose." />
   <title>The Astorian</title>
 
   <!-- Classic serif pair + small-caps feel -->
@@ -107,38 +107,10 @@
       margin: 0 0 22px;
     }
 
-    .buttons{
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-top: 8px;
-    }
-
-    .btn{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 14px;
-      border: 1px solid var(--hairline);
-      background: transparent;
-      border-radius: 999px;
-      font-size: 14px;
-      color: var(--ink);
-    }
-    .btn:hover{ border-color: var(--muted); }
-
-    .btn.primary{
-      background: var(--ink);
-      color: #fff;
-      border-color: var(--ink);
-    }
-    .btn.primary:hover{ filter: brightness(0.92); }
-
     /* Sections */
     .grid{
       display: grid;
-      grid-template-columns: 1.2fr .8fr;
+      grid-template-columns: 1fr;
       gap: 22px;
       margin-top: 10px;
       padding-top: 22px;
@@ -214,7 +186,6 @@
     @media (max-width: 820px){
       header{ flex-direction: column; align-items: flex-start; }
       nav{ justify-content: flex-start; }
-      .grid{ grid-template-columns: 1fr; }
       .hero{ padding: 40px 0 26px; }
     }
   </style>
@@ -226,11 +197,10 @@
     <header>
       <div class="masthead">
         <p class="title">The Astorian</p>
-        <p class="tagline">A journal of form, measure, and lasting prose.</p>
+        <p class="tagline">A journal of lasting prose.</p>
       </div>
 
       <nav aria-label="Primary">
-        <a href="#about">About</a>
         <a href="#submissions">Submissions</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -240,29 +210,11 @@
       <section class="hero">
         <h1>A New Literary Journal</h1>
         <p class="lede">
-          The Astorian publishes fiction, essays, and criticism grounded in classical forms and disciplined prose.
-          We prize structure, voice, and seriousness—writing made to endure.
+          The Astorian is a new literary journal based in New York City, launching in late 2026. We seek to publish fiction, essays, and criticism.
         </p>
-
-        <div class="buttons">
-          <a class="btn primary" href="#submissions">Read submission guidelines</a>
-          <a class="btn" href="#about">Learn about the journal</a>
-        </div>
       </section>
 
       <section class="grid">
-        <article class="card" id="about">
-          <p class="kicker">About</p>
-          <h2>On craft, continuity, and clear intention.</h2>
-          <p>
-            We seek work attentive to form: narrative coherence, rhythmic sentence-making, and the pressure of thought.
-            Experimental work is considered when governed by purpose and control.
-          </p>
-          <p>
-            The Astorian is edited in New York City.
-          </p>
-        </article>
-
         <aside class="card" id="submissions">
           <p class="kicker">Submissions</p>
           <h2>Guidelines</h2>
@@ -281,7 +233,7 @@
             </li>
           </ul>
           <p style="margin-top:12px;">
-            To be notified, email <a href="mailto:NaomiLeigh@theastorian.net">NaomiLeigh@theastorian.net</a>.
+            To be notified, email <a href="mailto:naomileigh@theastorian.net">naomileigh@theastorian.net</a>.
           </p>
         </aside>
       </section>
@@ -290,7 +242,7 @@
         <p class="kicker">Contact</p>
         <h2>Editorial correspondence</h2>
         <p>
-          <a href="mailto:NaomiLeigh@theastorian.net">NaomiLeigh@theastorian.net</a>
+          <a href="mailto:naomileigh@theastorian.net">naomileigh@theastorian.net</a>
           <br />
           <span style="color: var(--muted);">Please include “The Astorian” in the subject line.</span>
         </p>
@@ -304,7 +256,6 @@
   </div>
 
   <script>
-    // current year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
