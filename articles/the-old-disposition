@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>One Night at the Members Club — The Astorian</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #f6f2e8;
+      --ink: #121212;
+      --muted: rgba(18,18,18,.72);
+      --hairline: rgba(18,18,18,.14);
+      --card: rgba(255,255,255,.78);
+      --max: 980px;
+    }
+    *{ box-sizing:border-box; }
+    body{ margin:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+    a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--hairline); }
+    a:hover{ border-bottom-color:var(--muted); }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:28px 18px 60px; }
+    header{ display:flex; flex-direction:column; align-items:center; gap:14px; padding:18px 0 22px; border-bottom:1px solid var(--hairline); text-align:center; }
+    .logo{ max-width:280px; height:auto; display:block; margin:0 auto; }
+    nav{ display:flex; gap:16px; font-size:14px; color:var(--muted); justify-content:center; }
+
+    .article{
+      padding: 38px 0 18px;
+      max-width: 72ch;
+    }
+    .article h1{
+      font-family:"EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight:500;
+      font-size: clamp(34px, 4.6vw, 54px);
+      line-height: 1.08;
+      margin: 0 0 10px;
+    }
+    .byline{ color:var(--muted); margin:0 0 22px; font-size:14px; }
+    .article p{ font-size: 17px; color: rgba(18,18,18,.82); margin: 0 0 16px; }
+    .rule{ border-top: 1px solid var(--hairline); margin: 18px 0 18px; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <a href="../index.html" aria-label="Back to The Astorian home">
+        <img src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/G-eJ_SkWkAA_P9J.jpg" alt="The Astorian" class="logo">
+      </a>
+      <nav aria-label="Primary">
+        <a href="../index.html#submissions">Submissions</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <p class="kicker" style="margin:0 0 10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-size:12px;">Fiction</p>
+      <h1>The Old Disposition</h1>
+      <p class="byline">By Naomi Leigh · January 2026</p>
+
+      <div class="rule"></div>
+
+      <p>Main Characters</p>
+<p>Terri Macphearson – mother</p>
+<p>Craig Macphearson – father</p>
+<p>Eli Macphearson – son</p>
+<p>Bridget Macphearson – daughter, bride-to-be</p>
+<p>Andrew Orlansky – Bridget’s fiancé</p>
+<p>Cecilia Hanlon – Eli’s girlfriend</p>
+<p>Chris Macphearson – uncle, Craig’s brother</p>
+<p>Linh “Linda” Dan Ngo – Chris’s girlfriend</p>
+<p>Baby Chris Ngo – Linda’s child</p>
+<p>Anthony and Jessica Gentile – neighbors</p>
+
+<p>THE OLD DISPENSATION</p>
+<p>Birth or Death? There was a Birth, certainly,
+We had evidence and no doubt. I had seen birth and death,
+But had thought they were different; this Birth was
+Hard and bitter agony for us, like Death, our death.
+We returned to our places, these Kingdoms,
+But no longer at ease here, in the old dispensation,
+With an alien people clutching their gods.
+I should be glad of another death.</p>
+<p>T.S. Eliot</p>
+
+<p>I.</p>
+<p>Terri practically tripped over herself as she ran to the stove, the cup of broth uncomfortably sandwiched between her oven mitts. “The ham! The ham! The ham! The ham!” she repeated as she shuffled across the kitchen, words keeping pace with her feet, blurring together into a single syllable. “I forgot to put broth in the pan! Oh, please don’t be dry. Not dry,” she pleated to nobody in particular. Besides, a room over Craig and Eli weren’t paying attention anyway, their eyes fixated on the chyrons gliding across the living room screen as they forced their eggnog down, mechanically at first, then with ease.</p>
+<p>Christmas at the MacPhearson house wasn’t an event to be missed, and perhaps it was not just distraction but trust that caused Craig and Eli to ignore the house’s leading lady. Terri MacPhearson had made the same Christmas ham with the same fruit glaze they loved in the same pan for as many years as they’d owned their little house in Point Pleasant, New Jersey, with what Craig boasted had “ocean” views and which Eli was quick to point out to his father that it was, in fact, the Klemens family’s portion of the finger canal that they could see protruding out, which wound out in a twisting pattern to the Atlantic but was itself decidedly not the Atlantic. “It’s fuckin’ water,” Craig would say back, his throat like gravel. “It’s all connected.”</p>
+<p>Craig kept checking his watch, the Tissot that Terri had bought him for his 50th birthday to replace his Timex. He thought he was being inconspicuous but Eli was growing impatient too. “Nine o’clock,” Eli muttered, and his father shrugged. And they had reason to be impatient. The invites had said nine, sure, but Andrew Orlansky was never late, and he was tonight’s esteemed guest—and, depending on which other guest you asked, the night’s cause célèbre. Of course, Bridget was rarely on time, and perhaps she had imparted that unfortunate MacPhearson tardiness on her punctual fiancé.</p>
+<p>The family heard a knock at the door, and Eli let out a groan as he began to push himself off the couch, but his mother was quicker. “I’m on it!” Terri shouted as she breezed to the door, cracking it only half open to limit the howling breeze.</p>
+<p>At the door stood a burly middle-aged man whose leather jacket could hardly contain the figure bursting forth beneath it. At his side, reaching only his shoulders, a woman Terri couldn’t make out offered a cheery expression through the portion of her face that wasn’t obscured by jacket or beanie. In her arms was an infant.</p>
+<p>“Cree-cree!” she cheered. “And this must be Linh? And—”</p>
+<p>“Oh, Linda’s fine,” the woman chimed in as she shook off her layers inside. “And this is little Chrissy!”</p>
+<p>“How sweet!” Terri shot back, giving the baby a cartoonishly dignified handshake with her one finger and giggling. “He’s got the same name as his—well, as Uncle Chris!” She turned her attention back to the rest of the family. “Guys! Uncle Cree-cree is here, with Linh!” Then she swung back to Linda. “That’s what Craig used to call him when they were boys. Did he ever tell you that? Cree-cree!”</p>
+<p>When it was apparent the men were no longer moving from their designated spots on the living room couch, Chris mouthed “oh it’s fine!” and waved his hand in dismissal. Terri took their coats and they proceeded to the living room.</p>
+<p>“Merry Christmas, ya filthy animal” Craig laughed as he embraced his brother, pantomiming a Tommy gun then patting him on the back.</p>
+<p>“And a happy new year. Pow!”</p>
+<p>“And this must be Ling and baby Chrissy!”</p>
+<p>“Oh, Linda’s fine—” she tried to interject.</p>
+<p>“This is my lovely girlfriend Linh. Linda. She’s the reason I’m still standing, I’ll tell ya.”</p>
+<p>“And you ain’t easy to hold up these days!”  Craig cackled at his own joke, then the couple joined in too. “Eli, get off your damn phone, come say hi to your uncle.”</p>
+<p>They embrace. “You’re lucky you look more like Terri than you do this guy,” Chris told him, causing Eli to smirk. “Better gene pool over on that side of the, uhh, of the pool.”</p>
+<p>Linda set the baby down on the couch, and Eli scooted up next to him. He pulled up a video of dancing pigs dressed in Santa hats, and propped it up against the glass table. The baby’s eyes gazed across the room, combing up and down the framed family portraits lining the mahogany walls, tracing the reflection of the Christmas lights through the windows to the backyard, then eventually settling on Eli’s phone and fixating there. “Pretty cool, huh? Whatever animal you give me, I just plug it in and you can watch them dance to any song you want. Do you like piggies?” Eli asked him, and the baby looked back quizzically. “Well they’re my favorite. Smarter than they look. They’re even capable of using tools, if you just teach them right.” The baby burped, then giggled, and Eli giggled with him. Soon a bit of backwash dribbled out of the baby’s mouth. Eli leaned forward, grabbing a napkin and dipping it in his water. He wiped the baby’s mouth clean, then folded squeezed several drops of water from the napkin and flicked it at the baby, causing the two of them to giggle in unison. He wiped the water off his smooth pale forehead, then pecked it with a quick kiss.</p>
+<p>“Men!” a shout from the kitchen bellowed out. “Big, strong men. Can you bring in all the waters and sodas from the garage?”</p>
+<p>Eli groaned. “Can’t Anthony do it?”</p>
+<p>“He’s not here yet! And we’re not going to make our guests carry our drinks for us!”</p>
+<p>“Uncle Cree-cree is a guest.”</p>
+<p>“He’s family! It’s different.”</p>
+<p>Chris patted Eli on the leg and then used his body to push himself upwards, huffing as he rose. “Oh, come on. I’m no guest. Let’s go help your mother.”</p>
+<p>The men moved in a single-file line, winding their way through the kitchen’s deep wood cabinetry and travertine floors and warm, warm lighting to the harsh chill of the garage. They moved in age order, with Craig at the front, then Chris, then Eli in the back. Craig, with his back slightly hunched by time, was an inch or so shorter than Chris, who himself was shorter than Eli’s lanky vertical frame. Terri thought the negative correlation between their height and age was funny, and she chuckled to herself as they passed. Eli was a chubby baby, and never an easy one—he gave her hell during delivery and kept on giving her hell in the years after. But it wasn’t until his teenage years that it was as if he was stretched from each end, baby fat vanishing seemingly overnight. Every time Terri would venture up to his room, which in those years was covered in graffiti and in posters of The Wonder Years, Modern Baseball, Jeff Rosenstock, and whatever other punk posters he managed to get his hands on, it was as if Eli had grown another inch since her last trip up the stairs. Even hunched over his computer chair, shooing his mother away as he spoke into his gaming mic, she’d admire the protruding contours of his back, shaking her head in bemusement at how quickly it had stretched out from the baby rolls that were just there.</p>
+<p>Terri’s thoughts were interrupted by the approaching shuffle of Linda’s socks.</p>
+<p>“Can I help with anything?”</p>
+<p>“No, no, nothing at all. I’m just finishing up here. Make yourself at home!”</p>
+<p>Linda nods. “Thank you again for having us. We needed a change of scenery from the apartment.”</p>
+<p>“Hoboken, is that right? Did you guys end up staying?”</p>
+<p>“We did. It’s better for Chris. Well, baby Chris. My mom moved us every year when I was little, and you can’t grow roots that way, you know?”</p>
+<p>“Oh absolutely. From Vietnam, you mean?”</p>
+<p>“Well, yes, but then even here. I was in Virginia, then Colorado, then back to Virginia, then Ohio, then, I think—”</p>
+<p>“Oh, that’s no way to help a little girl make friends.”</p>
+<p>“Exactly! I would meet someone at school and I’d be like ‘Mom this is my new friend!’ and she’d wag her finger and say in her broken English—‘Don’t get too comfortable Linh!’ She’d say that right in front of my friends. Like a reminder that I wasn’t going to be sticking around.”</p>
+<p>“That’s awful!”</p>
+<p>“No, no, it was just true. My step-dad was a nurse. It came with the territory. My mom would’ve followed him to Mars if that’s where the work was.”</p>
+<p>“Well, good thing day traders don’t need to travel!”</p>
+<p>Linda laughed. “He’s, well yes he’s still doing that. But he’s been doing some online sales too! He has a store.”</p>
+<p>“A store?”</p>
+<p>“Well, like an account. There’s a bunch of sites where he resells everything. Our kitchen has turned into a little warehouse. Boxes everywhere! The baby likes to play in them and roll on top of the bubble wrap.”</p>
+<p>“Go figure. Well, I’m glad he’s keeping busy. They said that was good for him.”</p>
+<p>“That’s what he told me. Form new habits. That’s how you rewire the brain.”</p>
+<p>“That’s right, that’s exactly right,” Terri nodded. “You know, I studied behavioral science at Montclair State for two semesters.”</p>
+<p>Just then, roars from the garage gave Terri the respite to end the conversation right as the lull set in.</p>
+<p>“Tony!” Eli could be heard shouting from inside the garage with a sudden childlike tenor, his voice piercing the door and reverberating against the kitchen cabinets and the thin walls. Just then, a couple entered through the garage door. First, a slim woman in her late 30s, hair blonde but dark at the roots, entered with her heels clicking against the linoleum. Right behind her was a stocky and bald man, towering over her, bending down as he entered so that his head wouldn’t scrape the top of the doorframe. The woman was holding a small red gift bag, wrapping paper cascading out in every direction.</p>
+<p>“Just a little something for the family,” she purred, her Long Island accent coating each word.</p>
+<p>“Jessica, every year I tell you no more, and every year you come back gift in hand! You need to learn to listen, misses!”</p>
+<p>“Oh please, my mother, bless her soul, would kill me from the grave if she know I showed up to a Macphearson Christmas empty handed,” she theatrically made the sign of the cross as she spoke. “It’s nothing, a little something is all.” Her husband approached her from behind, putting his arm around her as she spoke.</p>
+<p>“We got Jessica’s famous cookies in there too, believe me I double checked,” he grinned. “Don’t say nothing if a few have bite marks already. At this rate I won’t have any for the in-laws in on tomorrow,” He turned back to Eli, who was hauling a twelve pack of diet coke in from the garage.</p>
+<p>“This guy staying out of trouble this year?”
+“Always, Tony. You know me.”</p>
+<p>“I’m sure. Still a wise ass I see.” Tony shoved Eli lightly and ruffled his hair.</p>
+<p>“Wise as ever,” Craig followed. “He got his dad’s attitude.”</p>
+<p>“And you’re a senior now? I still remember when you brought your middle school graduation diploma out at Christmas…You still seeing that little goth girl? She upstairs applying eyeliner?”</p>
+<p>Terri tried to get Tony’s attention, mouthing ‘SORE SUBJECT’ as she waved her hands no from behind Eli.</p>
+<p>“Ohhhh, she was a looker!” cooed Jessica, whose back was to Terri and missed the cue.</p>
+<p>Eli shot his mom a look. “No, no more Cecilia. Well, more Cecilia. But a different Cecilia.”</p>
+<p>“You’re dating a new girl with the same name?” inquired Jessica. “Isn’t that awkward?” Ahkkk-ward, she let the word linger, sitting on each syllable.</p>
+<p>“She’s a good girl,” Terri said. “Good family. Very sweet. Brought us ornaments last week and helped decorate the tree.”</p>
+<p>“You better behave with this one,” Craig wagged his finger at his son.</p>
+<p>“Uh oh!” Tony and Jessica exclaimed at the same time. “Is that her I hear in the living room?”</p>
+<p>“No, no, that’s Uncle Chee-chee. And his friend Linda and her baby. Come, come, let me introduce you to the baby. We’re just waiting on Bridget and Andrew now.”</p>
+<p>The group shuffled into the living room, exchanging greetings with Chris and Linda. Soon, the room segregated by gender, and quickly Uncle Chris and Tony were interrogating Eli about Cecilia, about college (he told them he figured he’d just go to trade school instead and start working, which they approved of), about his career plans (HVAC technician probably, but maybe plumber—it’s good money.) Eli didn’t mind the questions, but instead felt like an adult, like someone who had things to say about his life and the direction it would take that were entirely his own to choose. He liked that Chris and Tony had taken such an interest in his affairs, and continually found himself reflecting on Christmases past, when his role in the men’s conversations were only to talk about childish things—homework, grades, sports. Craig was in the other room, but Eli spoke with a constant awareness that his father could be listening in, sizing up his adolescent son, weighing his adult words against his childlike behaviors and ready to pounce in at any moment to point out the gulf between them and shrink Eli back to the little boy who’d played show and tell with his middle school diploma.</p>
+
+<p>II.</p>
+<p>The car grinded to a stop, its timeworn wheels making a screeching noise as they pressed tightly against the ice, searching for the pavement beneath to grasp and stop their forward roll.</p>
+<p>“Sorry. Deer”</p>
+<p>“What’s that?”</p>
+<p>“Deer,” Andrew repeated, pointing in front of him. The mother deer stood frozen still, fur disheveled, its eyes wide in the headlights, then shuffled across the street, babies in tow.</p>
+<p>Bridget murmured something that sounded to Andrew like acknowledgement before returning to the white glow of her phone that reflected back on her face. The sound of her scrolling through her TikTok feed was jarring, little bits of disjointed shouts and jingles, like someone toggling the radio stations before you could fully make out any of the songs. But it kept her mind occupied, and his on the ever disappearing and reappearing yellow em-dashes lining the road ahead. When Andrew allowed his eyes to lose their focus, the barren American Beech trees lining the Jersey roads which had shed their once deep greens looked similar enough to New Hampshire, and for a moment he was able to imagine it was his own parents’ home he was returning to, years before they sold it for more sun and less space in Hilton Head. The disparate years compressed together, and a wave of comfort temporarily washed over him. That calmness quickly evaporated when he saw the time—quarter to ten.</p>
+<p>“Crap, we’re later than I realized.”</p>
+<p>“Macphearson time,” said Bridget, now looking up from her phone. “Welcome to the family. It was my fault, they’ll know that. We’re about to turn on our street anyway.”</p>
+<p>The car slowed to a glide, taking a right then another right, parking at the end of the little driveway that was already full. When Andrew opened the door, the wind singed his red skin and he pulled his scarf over the lower half of his face as he fumbled through the trunk, cursing himself for not having gathered everything before they exposed themselves to the elements. Gifts for the parents, check. Bridget’s bag, check. Bridget’s second bag that was empty now but would soon be bursting at the seams with sweaters, boots, an automated vacuum, a yoga mat, a weighted blanket, check. Christmas cookies, check. Check, check, check, check.</p>
+<p>As Andrew approached the door, he found himself reciting the names Bridget had gone over with him countless times. He had the immediate family down pat. It was the rest of them that might give him trouble. Uncle Chris, but then there’s baby Chris too. No relation. Their neighbors, the Gentiles. Jessica and something Italian. Joe? No. Anthony, I think. Anthony Gentile. And then Uncle Chris’s girl—crap, what was her name?</p>
+<p>As if she could read her mind, Bridget whispered in his ear as they winded the brick path to the door: “Anthony, Jessica. Chris, Linda, baby Chris. And maybe Cecilia, Eli’s girlfriend. Different Cecilia.”</p>
+<p>“You’re a Christmas miracle, babe.” They kissed, and before they could ring the doorbell, the door swung open. A warm yellow-ish glow emerged from behind it, coating the snow and coating with light the previously obscured knick knacks—a ceramic frog couple, cast-iron sun and moon plaques on the wall, a door with a smiling snowman that read It’s Merry In Here—which lined the house’s modest patio and the two brick steps before the door.</p>
+<p>“Hallelujah!” exclaimed Terri, arms wide open for a hug, before shouting back at the rest of the house, “And someone here still remembers to enter from the front, not the garage!”</p>
+<p>Mother and daughter embrace, Andrew stood frozen behind them halfway in the doorway, seeing just enough room to squeeze past and free himself of the wind reddening his face, but resolving it would be better not to disrupt such a ritual. Eventually, Terri’s arms eased, and she turned toward him. “Andrew!” they embraced, her breasts pushing their way through his scarf, his peacoat, and his quarter-zip, nustling themselves through the fabric against his stomach. She rubbed his upper back with her hands, and when they parted he planted a kiss on one cheek, then the other.</p>
+<p>“Thank you so much for having me, Mrs. Macph—” he professed, trying to sound as humble and grateful as possible, but she was already whisking them through the entryway and toward the family room.</p>
+<p>“We were about to send out a search party looking for youse two,” jeered Anthony.</p>
+<p>“We got a little held up, I was doing my m—”</p>
+<p>Andrew cut Bridget off, figuring he’d spare her the shame, and figuring further that the family was already aware of her chronic tardiness without his stoking the flames. “We hit a little traffic, I’m sorry!”</p>
+<p>“I’m just messing, please, please, we got a few more of Jess’s signature cookies, no Christmas is complete without them, let me get youse a couple. Your first Jessica cookie?”</p>
+<p>Bridget smirked wide, sensing the opportunity. “His first Christmas! I mean, he was supposed to come last year, but his flight got snowed out. So we are officially witnessing baby’s first Christmas!”</p>
+<p>Craig held up his eggnog to cheers, and the other guests followed suit. “First of many!”</p>
+<p>Conversation flowed between the guests, choppily at first, until the brandy in the eggnog and the soft yellow glow of the tree’s lights smoothed out the jagged edges of their words, and soon the volume of the room rose to a hum, buzzing and constant. Uncle Chris and Linda played peekaboo with the baby and Elijah, who’d duck behind the couch, only to reemerge to baby Chris’s delight. Meanwhile, Bridget was showing off on Andrew’s behalf, proudly touting his rolodex of contacts back in New York.</p>
+<p>“So you work in the trades, right? Some kind of carpentry, right? Bridget was talking about you rolling up this and that.”</p>
+<p>“I’m sorry, I uhh—” Andrew turned to Bridget in confusion, hoping she could fill in the gaps.</p>
+<p>“No, no,” she cooed. “He works in private equity. He rolls up companies. Like, buys them, puts them together with other companies or splits them up, sells them off, that sort of thing.”</p>
+<p>Anthony tried his best to give a knowing nod. “I see, I see. Finance guy.”</p>
+<p>“Hey, nobody’s perfect, right?” Andrew shrugged, figuring he’d lighten the mood before changing topics.</p>
+<p>“You got any hot stock tips for me?”</p>
+<p>“Ant, he really can’t—” Bridget tried to interject.</p>
+<p>“No, no, it’s alright,” Andrew flashed a comforting smile, and rubbed his hand against the small of Bridget’s back. “Can’t say I’ve got anything too good for you. You know, I’d say the best thing is really just park your money in an index fund. Just put it in the S&P 500 and try not to touch it. There will be up years, some down years, but in the long-term it’s smooth sailing.”</p>
+<p>Anthony raised his eyebrows then grinned. He pointed his chubby finger, hair protruding from underneath a silver ring, in Andrew’s direction while he leaned in closer to Bridget. “Make sure to keep this one around.”</p>
+<p>Anthony laughed, and then Andrew laughed too, and their laughter rose into the air and dissipated among the buzz of the living room.</p>
+
+<p>III.</p>
+<p>Adorned in a dusty green French toile patterned tablecloth, the wooden dinner table took up most of the available space in the dining room, leaving only narrow columns along each side through which the guests could lift their arms as if they were under arrest, turn their bodies sideways, and squeeze to their respective seats. Several lucky diners (Terri, naturally, and Linda, baby Chris, and Jessica) managed to secure grey cushioned seats that resided full-time in the room. The rest of the guests were relegated to folding chairs that were brought out for the occasion, sitting more than a few inches below their cushioned counterparts and making their owners look relatively shorter from the view of the table. Dinner came in waves, with Terri positioned at the head of the table nearest the kitchen to allow her to easily shuffle in and out, serving as needed. Jessica and Bridget tried to get up to help, but she shooed them back down, insisting she’d handle it herself.</p>
+<p>Terri assigned seating through little folded index cards to assure sufficient mixing between the families and neighbors. On one end of the table, Anthony, Uncle Chris, Eli, and Terry were seated together. On the other sat Linda with baby Chris, Bridget, Andrew, and Jessica. Craig was in the middle, a sort of conversational conduit. Across from him was an empty chair labeled “Cecilia”, whom Eli assured the group would arrive soon and faulted himself for his tardiness—he told her they wouldn’t really eat until a half hour after call time. Nobody seemed to mind too much, as Eli’s relationships were never treated with the same degree of gravitas as Bridet’s, in part because the former’s tended to be more frequent and far shorter. Bridget was far more private about her sparse romantic life. Her parents once joked they wouldn’t meet her future husband until they’d already had two kids and a mortgage together. With Andrew’s arrival tonight, the whole family felt a sense of relief that Bridget’s timeline had been expedited, for convenience if nothing else.</p>
+<p>Soon, Eli hustled outside and returned with a short, petite girl with shoulder length black hair and heavy eye makeup. She was wearing a cute red square neck dress with seasonally appropriate green polka dots, which seemed vaguely ironic when set against her dark eyeshadow and nose piercing. She greeted the parents warmly if curtly before Eli introduced her to the group—“everyone, Cecilia. Cecilia, umm, everyone!”—and held a kind smile as she took her seat across from Craig.</p>
+<p>“Well, now that everyone’s here, why don’t we say grace?” suggested Terri. “Andrew, we’re so happy you’re with us for your first Christmas…would you want to do the honors?”</p>
+<p>Bridget, who had been on her phone, suddenly piped up. “Mom, don’t make Andrew do something against his faith.”</p>
+<p>“God is God! It doesn’t matter what you call him. The Israelis are God’s people, by the way. It’s all the same story. You don’t mind, do you sweetie?”</p>
+<p>“Israelites,” Bridget mumbled. “But no—”</p>
+<p>Andrew jumped in. “No, no, I’d be honored!” He mouthed something imperceptible to Bridet, and she relented.</p>
+<p>“Well, let us pray.” Everyone bowed their heads and closed their eyes. “I just want to express my gratitude for this lovely meal—and especially that pineapple glazed pork I’ve been staring at wide-eyed all night, Mrs. Macphearson.” The room offered a polite laugh.</p>
+<p>“But umm, no, on a serious note, I’m really thankful to have been invited. Bridget always spoke so highly about her childhood Christmases, and I’m so glad I get to experience it myself. So, umm, here’s to family—old and new. Amen.”</p>
+<p>Amen, the crowd agreed, and Terri made the sign of the cross as she opened her eyes. Bridget gave Andrew a warm smile. Thank you, she mouthed.</p>
+<p>Over the course of the dinner, Andrew tried to make polite conversation, but his mind was elsewhere. Did he say everything right? Maybe, he thought, he should’ve made some sort of nod to Jesus, or God. Would that have been so bad? He could’ve just said God, and left it ambiguous as to whether it was the Trinitarian God or the Old Testament God or Allah for any sake. And family—old and new. What was that about? They weren’t married yet. Was it pretentious to call himself part of the family before he’d said a vow? Sure, Bridget had invited him at her family’s insistence, and sure, Craig had thrown around the term son-in-law a few times. But wasn’t that for them to say? Who was he to speak about family to a group of people who’d spent this evening together in this very room every year for at least the past twenty? Nobody had given Andrew any indication that he misspoke, of course, but suddenly he couldn’t shake the feeling of being a stranger. He resolved to make amends with his in-laws-to-be. There was an invisible scoreboard floating above the Christmas table that only he could see, and he needed to start putting up better numbers.</p>
+<p>Conversation had begun to fizzle out by the time the desserts (peppermint bark, sugar plum cake pops, assorted seasonal cookies) reached the table. From the living room, the buzz of the television, which had at some point earlier in the night been switched to Fox News, penetrated the walls of the kitchen. The anchor could be heard saying something about bogus asylum claims at the border, with asylum applications reaching a new high in November after having lulled during the months before.</p>
+<p>“Cecilia if you didn’t get here soon we were gonna give your seat to one of those illegals,”  said Chris with a smile. Most of the table chuckled, except for Linda, who shot him a cold glance.</p>
+<p>“I thought we said no politics at the dinner table,” she said in a hushed tone directed only to him but which was heard by all.</p>
+<p>“Oh come on, it’s just a little banter. Andrew and Bridget came here all the way from New York where they’re giving out all the hotel rooms to the illegals, that’s all. Getting drunk all day on our dime, I see them. I’m just saying. I’m just saying,” he raised his hands in surrender. “You know I’m just messing with you, right Cecilia?”</p>
+<p>Cecilia smiled curtly and spun her fork in circles, toying with the remnants of what were once sugar plums and cookies left on her plate.</p>
+<p>“Cecilia’s parents are Guatemalan,” said Eli.</p>
+<p>“Oh, come on, I didn’t mean it like that. Besides, they came in the right way, I’m sure. We’re no different. Bunch of Scottish hillbillies here.”</p>
+<p>Eli didn’t relent. “It’s a little different is all.”</p>
+<p>Craig, who’d laughed particularly heartily at his brother’s quip, tried to break up the conversation. “Sweetie, the dessert is perfect. Really good. Really good. And Jessica’s cookies, too.”</p>
+<p>“So what, you’re pro illegals now? What are they teaching you in that school?”</p>
+<p>“Just didn’t like the joke, Uncle Chris.”</p>
+<p>“Well, get in line.”</p>
+<p>“I’m telling you, her cookies get better every year,” said Anthony. “I’ll tell you something. We gotta put her and Terri in one of those top chef shows. You know the one where they’re runnin’ through the supermarket. Madone! That’s basically how it was this morning. We were going up and down the aisles like fuckin’ crazy. What’s the show called sweetie? Somethin’-somethin’ grocery games?”</p>
+<p>“Guy’s,” mumbled Jessica.</p>
+<p>“What?”</p>
+<p>“Guy’s Grocery Games, hun. That’s the show. Guy’s Grocery Games.”</p>
+<p>Anthony nodded solemnly, and returned to his plate. The hum of the heater, previously too soft to hear, buzzed gently through the room as conversation fell silent. For a minute, only the heater and the sound of plastic fork against ceramic plate could be heard.</p>
+<p>“But I guess you’d know something about getting drunk all day. Sneaking gin into the AA bathroom then driving home buzzed and hitting your wife and all.”</p>
+<p>Chris hurled his glass at the wall, causing it to shatter. He pushed the table forward, squeezing the family members already packed tightly on the table’s opposite side against the kitchen wall. He stood up, pointing his meaty finger right at Eli.</p>
+<p>“Watch your fucking mouth! I haven’t had a sip in seven fucking years!” The word fucking stuck to the roof of his mouth, then forced spit out across the table each time he released it. His hand was shaking. “How much fucking pot you been smoking?”</p>
+<p>“Language! Not in front of the baby!” Linda yelled, covering the baby’s ears with her hands and holding him tightly against her breasts.</p>
+<p>Chris marched away from the table, slamming the screen door to the backyard as he stepped out.</p>
+<p>“Go to your fucking room right now!” Craig shouted at his son. “NOW!”</p>
+<p>Gladly, Eli mumbled, Cecilia trailing behind as he stomped up the stairs. Craig got up too, and marched outside to his brother.</p>
+<p>“I’m sorry, sweetie, he gets like this sometimes. He’ll be alright. Just need to give it a little time. I’m sure your family has their share of shouting matches too?” Terri was practically pleading with Andrew as she and Bridget went to sweep the broken glass.</p>
+<p>“Of course,” replied Andrew with a smile. “We’ve had our share. I know how it is.” Point from the free throw line.</p>
+<p>But he didn’t. Bridget could see it in his eyes, clear as day. He was shaken too. Sure, maybe a family of half Rockefeller Republicans and half people who subscribed to the New Yorker didn’t have much to argue about, but it wasn’t that. As a matter of fact, Andrew realized he’d never really seen his family fight. Bicker, sure. Snide comments, who didn’t? But fight?  The only time a piece of kitchenware broke was when his grandmother accidentally dropped her plate at Thanksgiving on the way to refill her stuffing, and she was so mortified she showed up next year with her own paper plate, which was the source of that evening’s laughter.</p>
+<p>“Lord knows Erick’s family had their fights, too. But that was a hoot.”</p>
+<p>Bridget smiled and quickly looked down, and Andrew looked her way, trying to parse out what it meant. He’d heard the name before, but he couldn’t quite place it. But her smile soon faded, and whatever clues he thought he could read through her pursed lips and shifting eyes came and went, as she offered to go upstairs and calm Eli down. With her mother’s blessing, Bridget pushed her chair back and hurried up the stairs, purse knocking against her skirt as she ascended.</p>
+<p>In ten minutes’ time, Craig and Chris had returned to the table, hat in hand. Soon, Eli came down the stairs, and the pair reunited back where the fight had started. For a moment, it was unclear who’d be the one to make the first move. But soon Chris figured that now was the time to display whatever maturity had been sorely lacking earlier, and reckoned that given Eli’s age, the obligation probably fell on him.</p>
+<p>“You know I love you, kid.”</p>
+<p>“I love you too, Uncle Chrissy. I’m sorry. I know you didn’t mean anything by it.”</p>
+<p>“I’m sorry too.”</p>
+<p>They hugged, patting each other three times on the back as they embraced. Chris slightly ruffled his hair, which would have normally caused a reaction from Eli, but he chose to let it pass.</p>
+<p>“Merry fuckin’ Christmas,” he smiled.</p>
+<p>“Language again,” signed Linh, and the table laughed all over.</p>
+
+<p>IV.</p>
+<p>In Bridget’s bedroom, Andrew stared at the walls, the desks, and the armoire, trying to piece together what he could of the woman lying beside him. Gymnastics trophies adorned the tops of the desks. Bridget Marie Macphearson, Go for the Gold! Gymnastics, 2008, 3rd Place. Bridget Macphearson, 2011 Annual USAG Starstruck New Jersey Competition, 1st Place Overall.  On the floor next two the bed, two plushies—a white teddy bear holding a valentine heart and what looked like a Neopets bat—stared back up at him. The wallpaper was mint and soft pink, divided in half by a chipped white chair rail which circled the room. Outside, the moon’s faint glow combined with yellow street lights to warmly coat the room.</p>
+<p>“Well, hey, I told you the Macphearson Christmas parties are always eventful,” she said, half-glancing up from the glow of her phone.</p>
+<p>“Who’s Erick?” Andrew asked pointedly.</p>
+<p>“Huh?”</p>
+<p>“Erick. Your mom mentioned someone named Erick. She said his family was crazy, or something.”</p>
+<p>Bridget sighed, pausing briefly before scooting up in bed and putting her phone by her side.</p>
+<p>“He was my ex.”</p>
+<p>“I figured.”</p>
+<p>“Mom always loved him, but his family was a little nuts, too. Bunch of drunk Irish Catholics. Maybe it made her feel better, by comparison. We dated some years back. It was always on and off with Erick,” Bridget began to lose herself in nostalgia.</p>
+<p>“There’s no need—”</p>
+<p>“No, no, it’s good to share, I think. Erick passed away six years ago.”</p>
+<p>“I had no idea, Bridge. I’m sorry.”</p>
+<p>“It was on Christmas Eve, too. He didn’t want to come at first, because his grandpa, who was pretty sick, was with his family in Tom’s River. But I really wanted him here. Me and my dad weren’t getting along too well. It was back when I still wanted to study art history. He told me I’d never have any money, since that’s what I wanted and Erick worked as an HVAC technician. It was the same thing his grandpa did, and Erick always joked he’d end up just like the old man, with some musculoskeletal disorder from too much bending and lifting. I told him his driving would get him first. He always drove so fast…”</p>
+<p>“I see.”</p>
+<p>“So, he decided that night to spend Christmas Eve with his family, then come over late at night to ours to celebrate Christmas day here. So that was the plan. Anyway, the police found his car wrapped around a tree in Point Pleasant. Said he had benzos and alcohol in his system. They had to do a closed casket funeral,” Bridget started to cry. “But I just wanted to see him one more time. I just wanted to be able to say goodbye. I felt like I never got to say goodbye. And I guess, I don’t know. Maybe a little bit of me feels like I killed him.”</p>
+<p>“No, no, baby. You can’t think that way. You can’t.”</p>
+<p>“Christmas feels so weird for me now. It just feels…weird.”</p>
+<p>Andrew put his arms around her as she wept, and she burrowed her head against him. He could feel her body shake up and down, up and down against his chest. Soon, the shaking slowed, and he could feel the tension in her body relent as she drifted into a deep sleep, tears drying in a puddle around the pillow.</p>
+<p>Andrew couldn’t sleep. His arms were still around her, and he dared not move them. As he stared out the window, he wished he were in New Hampshire. Hannukah and Christmas overlapped this year, and he imagined a menorah burning softly in his family’s kitchen. He thought of his parents, of his brother and sister, imagining them humming Baruch Hashah Adonai… beside the glow of the menorah. He could hear a drunk Craig laughing with his brother downstairs and figured it was all quiet in New Hampshire, having forgotten they were in Hilton Head. Andrew’s family members had probably retreated back to their rooms after an uneventful evening, each under their own sheets, the volume of the house barely different at night than it had likely been that evening. He imagined his own room, the soft neutrals of his cotton percale bedding, the stone lamp beside his bed, the cashmere throw at the end keeping his feet warm. He imagined his mom, and wondered what he’d say when she asked him how his first Christmas was. He turned back toward the woman next to him and saw a stranger. He found himself softly petting her, moving the strands of her out of her face. But it all felt mechanical, like his hands were moving independently of his brain.</p>
+<p>Outside, the snow began to fall in a soft flutter. It coated like a blanket the red bricks of the Macphearson patio, the welcome mat, the plastic lawn chairs and charcoal grill in their backyard, the winding pavement of the streets leading out the neighborhood and onto the freeway, across the pines and the scrub, over the sand lining the coast, over the juniper tree off Route 35 where a small memorial plaque still stood, over those who slept in their beds and those still huddled in familiar kitchens and living rooms, over the myriad asphalt shingle roofs where families dreamt in matching pajamas, over the old and the young, the living and the dead.</p>
+
+    </main>
+  </div>
+</body>
+</html>
