@@ -205,6 +205,38 @@
       align-items: center;
     }
 
+    /* Filter tabs */
+    .filter-bar{
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .filter-btn{
+      background: none;
+      border: 1px solid var(--hairline);
+      border-radius: 999px;
+      padding: 6px 18px;
+      font-family: inherit;
+      font-size: 13px;
+      letter-spacing: .06em;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background .15s, color .15s, border-color .15s;
+    }
+
+    .filter-btn:hover{
+      border-color: var(--muted);
+      color: var(--ink);
+    }
+
+    .filter-btn.active{
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--bg);
+    }
+
     /* Mobile */
     @media (max-width: 820px){
       .hero{ padding: 40px 0 26px; }
@@ -243,11 +275,20 @@
         </p>
       </section>
 
-      <section class="grid" aria-label="Latest" id="latest">
+      <section aria-label="Latest" id="latest">
+
+        <div class="filter-bar" role="group" aria-label="Filter articles by genre">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="prose">Prose</button>
+          <button class="filter-btn" data-filter="poetry">Poetry</button>
+          <button class="filter-btn" data-filter="essays">Essays</button>
+        </div>
+
+        <div class="grid" id="article-grid">
 
         <!-- Article preview card -->
-        <article class="card">
-          <p class="kicker">Fiction</p>
+        <article class="card" data-genre="prose">
+          <p class="kicker">Prose</p>
 
           <div class="preview">
             <a href="articles/the-old-dispensation.html" aria-label="Read The Old Dispensation">
@@ -266,24 +307,28 @@
           </div>
         </article>
 
-        <!-- Submissions card -->
-        <aside class="card" id="submissions">
-          <p class="kicker">Submissions</p>
-          <ul class="list">
-            <li>
-              <span class="label">What we read</span><br />
-              Fiction (prose and poetry), essays, and criticism.
-            </li>
-            <li>
-              <span class="label">Status</span><br />
-              <strong>Closed for now.</strong> We will announce the next reading period here, at which point we will accept submissions for a small fee <a href="https://forms.gle/Lt8wyreEeg7QUfa36">here</a>, a portion of which will be donated to <a href="https://www.episcopalcharities-newyork.org" target="_blank">Episcopal Charities of New York.</a>
-          
-              Accepted submissions will receive a stipend.
-            </li>
-          </ul>
-        </aside>
+        </div><!-- /.grid -->
+
+        <p class="no-results" style="display:none; color:var(--muted); font-size:15px; padding:18px 0;">No articles in this category yet.</p>
 
       </section>
+
+      <!-- Submissions card -->
+      <aside class="card" id="submissions" style="margin-top:22px;">
+        <p class="kicker">Submissions</p>
+        <ul class="list">
+          <li>
+            <span class="label">What we read</span><br />
+            Fiction (prose and poetry), essays, and criticism.
+          </li>
+          <li>
+            <span class="label">Status</span><br />
+            <strong>Closed for now.</strong> We will announce the next reading period here, at which point we will accept submissions for a small fee <a href="https://forms.gle/Lt8wyreEeg7QUfa36">here</a>, a portion of which will be donated to <a href="https://www.episcopalcharities-newyork.org" target="_blank">Episcopal Charities of New York.</a>
+
+            Accepted submissions will receive a stipend.
+          </li>
+        </ul>
+      </aside>
 
       <section class="card" id="contact" style="margin-top:22px;">
         <p class="kicker">Contact</p>
@@ -304,6 +349,32 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Genre filtering
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const articles   = document.querySelectorAll("#article-grid article[data-genre]");
+    const noResults  = document.querySelector(".no-results");
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.dataset.filter;
+
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        // Show / hide articles
+        let visible = 0;
+        articles.forEach(article => {
+          const match = filter === "all" || article.dataset.genre === filter;
+          article.style.display = match ? "" : "none";
+          if (match) visible++;
+        });
+
+        // Show "no results" message if needed
+        noResults.style.display = visible === 0 ? "" : "none";
+      });
+    });
   </script>
 </body>
 </html>
