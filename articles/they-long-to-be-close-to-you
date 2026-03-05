@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>(They Long To Be) Close To You — The Astorian</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #f6f2e8;
+      --ink: #121212;
+      --muted: rgba(18,18,18,.72);
+      --hairline: rgba(18,18,18,.14);
+      --card: rgba(255,255,255,.78);
+      --max: 980px;
+    }
+    *{ box-sizing:border-box; }
+    body{ margin:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.65; }
+    a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--hairline); }
+    a:hover{ border-bottom-color:var(--muted); }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:28px 18px 60px; }
+    header{ display:flex; flex-direction:column; align-items:center; gap:14px; padding:18px 0 22px; border-bottom:1px solid var(--hairline); text-align:center; }
+    .logo{ max-width:280px; height:auto; display:block; margin:0 auto; }
+    nav{ display:flex; gap:16px; font-size:14px; color:var(--muted); justify-content:center; }
+
+    .article{
+      padding: 38px 0 18px;
+      max-width: 72ch;
+    }
+    .article h1{
+      font-family:"EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight:500;
+      font-size: clamp(34px, 4.6vw, 54px);
+      line-height: 1.08;
+      margin: 0 0 10px;
+    }
+    .subtitle{
+      font-family:"EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-size: clamp(16px, 2vw, 20px);
+      color: var(--muted);
+      font-style: italic;
+      margin: 0 0 16px;
+      line-height: 1.4;
+    }
+    .byline{ color:var(--muted); margin:0 0 22px; font-size:14px; }
+    .article p{ font-size: 17px; color: rgba(18,18,18,.82); margin: 0 0 16px; }
+    .rule{ border-top: 1px solid var(--hairline); margin: 18px 0 18px; }
+    .hero-img{ width: 100%; height: auto; display: block; margin: 0 0 24px; }
+    blockquote{
+      border-left: 3px solid var(--hairline);
+      margin: 0 0 16px 0;
+      padding: 4px 0 4px 20px;
+      font-style: italic;
+      color: rgba(18,18,18,.82);
+      font-size: 17px;
+    }
+    blockquote p{ margin: 0 0 8px; }
+    blockquote p:last-child{ margin: 0; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <a href="../index.html" aria-label="Back to The Astorian home">
+        <img src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/G-eJ_SkWkAA_P9J.jpg" alt="The Astorian" class="logo">
+      </a>
+      <nav aria-label="Primary">
+        <a href="../index.html#submissions">Submissions</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <p class="kicker" style="margin:0 0 10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-size:12px;">Essays</p>
+      <h1>(They Long To Be) Close To You</h1>
+      <p class="subtitle">The horror, sincerity, and dissociative miasma of 20th century womanhood writ in Todd Haynes' <em>Superstar: The Karen Carpenter Story</em></p>
+      <p class="byline">By Audrey Robinovitz · February 2026</p>
+
+      <div class="rule"></div>
+
+      <img src="superstar-karen-carpenter.jpg" alt="Superstar: The Karen Carpenter Story" class="hero-img">
+
+<p>In the 18th century, tuberculosis was as common as it was deadly. As if to cope with its omnipresence, society had coded a very specific image of who it afflicts and why. The disease could be contracted anywhere yes, but was mainly transmitted by those living in close contact within large urban centers. As a consequence, the disease became a sort of bohemian fashion statement — it was delusionally reported to favor frail, noble, and creative intellectuals. Ironically dubbed 'the poet's disease' — its symptoms: pale skin, feverish constitution, and sickly thinness, were commonly aestheticized. You see it brazenly in portraiture from the era. The common understanding was a sort of transactional logic, in which brilliant minds were uniquely stricken with the disease, physically declining slowly and beautifully in exchange for an increase in artistic ability and emotional sensitivity. The remnants of this class-based logic are alive and well in our cultural understanding of Anorexia Nervosa, a condition as equally symptomatic of the contradictory logic of modern society and its excess. A frequently beloved subject by artists, many works manipulate the mental illness' preciousness to bolster its autofictional intrigue, obscuring the pathetic and destructive logic played out within the anorexic-creative's own life. It sometimes feels embarrassing to admit I used to have trouble feeding myself. But then again, it also feels a little embarrassing to admit I think the best work of art about disordered eating is an amateur student biopic of Karen Carpenter's tragic and untimely death ripped in 240p from a contraband VHS and shot almost entirely with Barbie Dolls. Todd Haynes' <em>Superstar: The Karen Carpenter Story</em> was made while the now-lauded director was a student at Bard College, and received swift and unanimous cease-and-desist orders from Karen Carpenter's brother and musical collaborator, Richard Carpenter.</p>
+
+<p>It's not hard to understand why. The film is kitschy, pessimistic, and quick to point fingers at Karen's entire family for worsening and refusing to acknowledge her growing bouts of Anorexia. The film often goes so far as to claim her family, her label, and the pressures of nascent fame were <em>responsible</em> for her death, as she had been hiding chronic use of ipecac syrup to induce vomiting and keep her weight down in a manner she could conceal from her loved ones. I'm not interested in a historical investigation of her case, and I don't really think <em>Superstar</em> is either. Haynes is clearly more interested in the conscious and unauthorized manipulation of her legacy into a larger portrait of women's material and societal conditions at the height of the sexual revolution. The film's structure itself takes the clinical and ironic tone of a public service announcement. It reads like something you're exposed to as a child in health class, which carries with it similar affective qualities of ham-fisted nostalgia, trauma, and home video technology. Haynes spells it out with a voice half-ironic and half-sincere. Interspersed throughout the video montages, sharply interrupting narrative scenes are long title cards, one reading "<em>As we investigate the story of Karen Carpenter's life and death we are presented with an extremely graphic picture of the internal experience of contemporary femininity.</em>"</p>
+
+<p>There is a sense throughout the entire film that Haynes finds a vast and unfathomable emptiness at the bottom of contemporary womanhood and its miasmic fatalism. It is as if, unveiling the body of a murder victim to be autopsied, below the skin exists a large black void, refracting no light and slowing all attempts at pathologization into inertia. This is what I think Haynes gets right about eating disorders. Many notorious books, most notable among them is Rudolph Bell's <a href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo5954712.html"><u>"Holy Anorexia"</u></a>, have correctly categorized modern-day anorexia nervosa as a unique socio-cultural phenomenon enabled by overabundance and abetted by a self-sustaining mythos of self-neglect as cleansing piety. What bothers me, as a recovered anorexic myself, is how Bell and other male authors themselves sustain and validate by association this sparkly veneer to disordered eating.</p>
+
+<p>There is the sense, both in his reading of ancient mystics like Saint Catherine of Siena, and in his diagnosis of contemporaneous teenage girls, that disordered eating habits succeed in their attempt at manufacturing agency over one's own body in a system built to profoundly distance women from themselves. This is a dangerous conceit, and one that afflicts even the most sympathetic of artists portraying the condition. Even <em>Superstar</em> takes its time to pay homage to the sort of perceived control anorexics exercise over themselves, one that reifies the logic of disordered eating patterns somehow successfully allowing women to momentarily escape the control-matrix of misogyny and meaningfully self-determine the nature of their bodies. One of my most clear memories from residential treatment was how childishly helpless I felt, and how deeply out of control myself and the women around me were of our own lives. Despite its own rhetorical pitfalls, Haynes' <em>Superstar</em> is one of the only works of art I've encountered that clearly exposes the hollow and utterly worthless core of anorexia, not something that asserts, or says, or <em>does</em>, anything at all — but a simple and cosmically dangerous dissociative emptiness.</p>
+
+<p>The film, entirely soundtracked by the Carpenters' recognizable hits, opens with the only live action sequence: Karen's mother discovering her body, overdosed on emetics and laxatives, limp and lifeless in her closet. It's horrifying, and is immediately set against their best song — the aching and sparkling <em>(They Long To Be) Close To You</em> — a central motif in the film. This song, praising a lover for their beauty, and aching for intimacy, sets the tone of the entire film: somehow perfectly sincere and utterly fatalistic. We reach towards the core of Karen's being longingly, wanting to be close to her, wanting to understand — yet all we are met with is suburban sprawl laid out on videotape, lifeless dolls, and empty platitudes. What <em>Superstar</em> does so well is pit the clean-cut, all-American sheen of the Carpenters' public image against the horrifying internal reality of Karen's tailspin into suicide and abjection. Indeed, it was the death of Karen Carpenter as a celebrity that quite literally invented the concept of modern Anorexia. It was the tipping point that brought the disease into public existence — from a set of varying female behaviors to a clinical pathology. The film's narrative is straightforward. The Carpenters are discovered, signed into an exploitative record deal, and skyrocketed into fame. Karen takes up a number of dieting plans to maintain her public image, and becomes addicted to abusing laxatives and restricting food intake. At first her family doesn't notice, then slowly first her brother, then her mother, catches on. The family's immediate reaction is to belittle her, attempting to force feed her against her will, and responding with critical doubt when Karen makes one last attempt to relocate to a novel treatment center in New York to recover. It's a scary and familiar process to pretty much anyone who has grown up as a young woman in middle class America. The details don't need to be exactly the same, because the repressive, appearances-focused tension of the suburban environment, and the impossible prison of finding the language and resources to assert treatment against the egos, consciences, and infighting of a tight-knit family is always there. These dramatic dialogue scenes are interspersed with TV static and television clips. Most interestingly, there are glimpses of Vietnam War coverage laced into these montages. As if to echo Karen's internal dissociation with the broader national derealization of the late 60s and early 70s in the face of brutal images of state violence, these images also cite commonly raised objections and disruptions to eating disorders as a "first world problem," or a symptom of the global north's abject excess on the back of exploitation. The Carpenters' music as soundtrack to this moment in world history is particularly compelling, as a sort of grasp towards the idealism of the 50s in an era in which all notions of progress and betterment of the human condition are soiled with cash and blood. Haynes' work seems to grapple with this, and frequently includes references to the Carpenter duo as "nostalgic," "safe," or "clean-cut," in implicit and dismissive reference to the contemporary zeitgeist.</p>
+
+<p>Indeed Anorexia Nervosa is itself symptomatic of this neurotic idealism. It symbolically represents an obsession with self-image, an authoritarian impulse that rests on the supposed victimhood of femininity, and paints the subject as both pretty, innocent victim, and harsh executioner. Haynes clearly displays a title card that reads: "<em>Anorexia can thus be seen as an addiction and abuse of self-control, a fascism over the body in which the sufferer plays the parts of both dictator and the emaciated victim who she so often resembles.</em>" Haynes is referring here in a psychoanalytic sense to a sort of erotic play. In what would begin a larger trend for him, there are odd scenes interspersed throughout the montage sequences of barbie dolls spanking each other. I would refute any labeling of this movie as a 'queer text,' despite Haynes' own identity and the nature of most of his other work. That said, this interruption does seem to destabilize the boundaries of normative femininity, and echoes the alienating sexual consequences of anorexia, one in which over-enthusiastically violent performance of femininity replaces interpersonal sexual intimacy with autoerotic harm. A politics of aestheticized violence, in which pain is regarded as pleasurable and pleasure is regarded as inherently corrupting and ugly. The concept of ugliness is important to this movie. In a more straightforward sense, Haynes works through Barbie dolls because they are totems of idealized feminine beauty.</p>
+
+<p>What's even more powerful, however, is how terrifying and how grotesque they are made to look herein. Much of this can be boiled down to the fact that there is no one clear restoration of the film, and because of the sheer amount of lawsuits raised against its contents, has had to remain circulated in awful quality formats via Youtube and VHS. That said, as the film progresses and Karen's eating disorder worsens, Haynes literally shaves away at her doll itself to create an emaciated and hollow appearance. This use of dolls as interpersonal surrogates directly recalls the work of transexual artist Greer Lankton, whose entire life revolved around the constant compulsive creation of life size fabric dolls reenacting and deconstructing her own transition, eating disorder, and other abjected negotiations of the body.</p>
+
+<p>Lankton's work gained notoriety for capturing the brutal physicality of the human body, and often portrayed popular figures of the New York art scene in surreal and objectifying scenarios. Lankton's work is practically synonymous with her longstanding anorexia, and the desire to sculpt the dolls that built her art career was simply an extension of her larger desire to shape and form her own body. Like Karen, Greer fell headfirst into the sort of consuming emptiness that readily withers away at not only your mortal life, but your eternal soul. For both women, food and its absence was merely a medium by which you could touch, feel, and embody something bigger than oneself. It wasn't until their deaths, however, that people began to see the contours of this larger self-effacing suicide monument. It is a terrifying, ungodly sort of thing that can only be glimpsed in fleeting glances between funerals for young girls and inside residential treatment centers.</p>
+
+<p>In one of the more heartbreaking scenes, we see her family rejoice after a spell in treatment has seemingly cured her. The title card reveals that for most Anorexic women, recovery is quantified by the restoration of "normal sex functions" — and to this end women are often force-fed until they reach a stable enough weight to restore the regular menstrual cycle. Obviously, the real core problem is never addressed, but worse, the problem itself is quantified by a woman's capacity to menstruate — that is to say to ensure her fertility. Utterly and grossly patriarchal, the film itself exposes a discursive environment in which the consequences of women hurting themselves are measured in men's tears and a hypothetical nuclear family's future existence. To destroy the body, then, is to attempt fruitlessly to remove oneself from this matrix of desirability, and often to distance oneself from the sexed body entirely. The late-stage anorexic, as the film glibly tries to remind us, only looks good in their mind.</p>
+
+<p>In reality, the inherent desire to be thin has gone from a socially validated practice into a masochism that ostracizes. The desire itself doesn't change, however, the world does. To be anorexic is often to think oneself the winner of a game most people, supposedly healthy or not, are subconsciously all playing.</p>
+
+<p>From Barbara Kruger's 1987 review of the film, the feminist avant-garde has always been interested in <em>Superstar: The Karen Carpenter Story</em>. Whether or not this movie is, itself feminist, I think can easily be called into question. Clearly the profound degree to which it sympathizes with Karen, and sees her as the victim of extenuating circumstances does portray her story in a light more sympathetic to the material conditions of women than most accounts of the story. That said, I want to question whether the idea of a movie about anorexia could ever be considered feminist in and of itself. Anorexia is not inherently a gendered condition, but what killed Karen Carpenter — the media spectacle of Anorexia Nervosa — certainly is a state of being fabricated on the exploitation and ritual debasement of women. It is as if a navel-gazing death cult were founded on the holy texts of a large nation's religion, and that cult was itself so magnified and objectified that its ideals become biohazards across time and space. The ideas which lead themselves in their seemingly logical conclusions to the anorexic mindset are only diagnosed and treated as a disorder when they create symptoms that make women undesirable, unattractive. A woman's desire to lose weight and be thin is as common as it is usually considered healthy and reasonable. It becomes a disorder when it becomes too important to a woman's life, when she becomes too devoted to something as seemingly benign as dieting. To Karen's family and fans, it is not that her desire to lose weight was inherently wrong, but that she became <em>too addicted</em> to the inherently destructive and punitive methods that all women are expected to employ against themselves in the service of patriarchy, and even the nation itself.</p>
+
+<p>In her excellent review of the film, Kruger writes:</p>
+
+<blockquote>
+<p>Shots of spankings, broken glass, toilet bowls, and piles of food melt into one another and repeatedly coalesce into a simple but glowing red, white, and blue graphic image of an object. No, it is not the American flag around which the film's narrativity congregates, but a logo of a different order — a product that, like the nation's emblematic banner, has the ability to delineate the looks, sounds, and purges of young women like Karen Carpenter: a luminously omnipresent box of Ex-Lax. It is perhaps this small film's triumph that it can so economically sketch, with both laughter and chilling acuity, the conflation of patriotism, familial control, and bodily self-revulsion that drove Karen Carpenter and so many like her to strive for perfection and end up simply doing away with themselves.</p>
+</blockquote>
+
+<p>A good portion of the film's terse dialogue is just people calling her name. "Karen? We have to leave in five minutes. Karen? Where did you go? Karen? If you keep this up you'll ruin both our careers." An endless chorus demanding an explanation; an assertion of any real personhood or identity at the core of the name and brand Karen Carpenter. As the movie goes on, as the dirty shiny slick material of the screen becomes louder and louder, as the disordered eating and purging cycle becomes more and more of her whole entire life, these voices are answered only with silence. A short line near the end of the film has Karen confiding in a friend: "I know I'm sick. I guess I'm starting to realize that it isn't something good."</p>
+
+<p>The latter half of the film's runtime chronicles feeble attempts at healing: she attempts to reach out to friends, to family, to professionals. We know how they end. The film ends on a seemingly optimistic note, as her family celebrates her supposed recovery, but the film's opening scene, the discovery of her body, pathetic and lifeless, in a clothes closet, casts these moments in a grim sort of resigned tone. The film ends with its centerpiece song. As shots of suburban sprawl play out on the screen, <em>(They Long To Be) Close To You</em> plays out. If there is a moral center to this narrative, it's this song. We do long to be close to her, to know and internally rationalize this kind of struggle, the pure and raw drive towards death and total self-annihilation that fuels her condition and arrives as a consequence of womanhood itself. This is the bottom of the well, this is the logical conclusion of a half-baked worldview impressed upon half the world's population as mere children. Modern-day Anorexia Nervosa is not a failure of modern society, it is a symptom. The core of the Carpenter story is hollow, emptied out by a self-serving death drive towards ideals of discipline and control. The raw sentimentalism of this film's doomed ending suggests that what scarce scraps of meaning exist in the self-destruction of millions of women can be salvaged by circling the boundaries of this absence with a fine-tooth comb. Not so much to recover something that has been lost to time forever, but simply to be close to the gaping set of holes it's left in every individual family, community, and the world at large.</p>
+
+<p>Todd Haynes' <em>Superstar: The Karen Carpenter Story</em> <a href="https://www.youtube.com/watch?v=FmY5mTmrsVI"><u>is available to watch on Youtube</u></a>, and has yet to receive an authorized restoration.</p>
+
+<p style="font-size:13px; color:var(--muted);">'Eat your Lipstick' is a perfume blog by Audrey Robinovitz, @foldyrhands</p>
+
+      <div class="rule"></div>
+
+<p><em>
+  Audrey Robinovitz is a multidisciplinary artist, altar girl, and self-professed perfume critic. Her work intersects with the continued traditions of fiber and olfactory arts, post-structural feminism, and radical orthodox theology. At this very moment, she is most likely either smelling perfume or taking pictures of flowers.
+</em></p>
+
+    </main>
+  </div>
+</body>
+</html>
