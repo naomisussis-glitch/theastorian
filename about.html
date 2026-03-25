@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About The Astorian literary journal." />
+  <title>About — The Astorian</title>
+
+  <!-- Same fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* COPY your exact CSS from index.html */
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="masthead">
+        <img
+          src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/G-eJ_SkWkAA_P9J.jpg"
+          alt="The Astorian"
+          class="logo"
+        />
+        <p class="tagline">A journal of lasting prose.</p>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="index.html#latest">Latest</a>
+        <a href="about.html">About</a>
+        <a href="index.html#submissions">Submissions</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- About intro -->
+      <section class="hero">
+        <h1>About The Astorian</h1>
+        <p class="lede">
+          The Astorian is a New York–based literary journal devoted to prose and poetry written with durability in mind.
+        </p>
+      </section>
+
+      <!-- About content -->
+      <section class="card">
+        <p>
+          We publish work in the Anglo-American tradition—writing attentive to form, cadence, and clarity, and animated by a belief that literature should aspire beyond the moment in which it is written.
+        </p>
+
+        <p>
+          Our interest lies in prioritization of craft over novelty: sentences that hold, structures that endure, and voices that recognize the weight of what has come before. We welcome fiction, essays, and poetry that engage seriously with style, whether through established forms or through new work that demonstrates a clear awareness of them.
+        </p>
+
+        <p>
+          A portion of proceeds from <em>The Astorian</em> supports Episcopal Charities of New York.
+        </p>
+      </section>
+
+      <!-- Submission Guidelines -->
+      <section class="card" style="margin-top:22px;">
+        <p class="kicker">Submission Guidelines</p>
+
+        <ul class="list">
+          <li>
+            <span class="label">Formatting</span><br />
+            Times New Roman, 12 pt. Double-spaced for prose; poetry may be single-spaced. No sans-serif fonts. Standard 1-inch margins. Include name and contact information on the first page. Pages should be numbered.
+          </li>
+
+          <li>
+            <span class="label">Length</span><br />
+            Fiction and nonfiction: up to ~7,000 words.<br />
+            Poetry: up to 5 poems per submission (under ~1,500 words total).
+          </li>
+
+          <li>
+            <span class="label">Style</span><br />
+            We favor work with a strong sense of form, proportion, and control. Both traditional and contemporary structures are welcome, but should demonstrate intentionality. Avoid excessive reliance on stylistic gimmicks or ephemeral trends.
+          </li>
+
+          <li>
+            <span class="label">Simultaneous submissions</span><br />
+            Permitted, but please notify us promptly if your work is accepted elsewhere.
+          </li>
+
+          <li>
+            <span class="label">Response time</span><br />
+            We aim to respond within 1–2 weeks.
+          </li>
+
+          <li>
+            <span class="label">Payment</span><br />
+            We offer a small stipend for accepted work.
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> The Astorian. All rights reserved.</span>
+      <span><a href="https://theastorian.net">theastorian.net</a></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
