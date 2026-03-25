@@ -6,7 +6,6 @@
   <meta name="description" content="The Astorian is a literary journal devoted to lasting prose." />
   <title>The Astorian</title>
 
-  <!-- Classic serif pair -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -23,13 +22,14 @@
 
     *{ box-sizing: border-box; }
     html, body{ height: 100%; }
- 
+
     body{
       margin: 0;
       background: var(--bg);
       color: var(--ink);
       font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
-      line-height: 1.55;
+      font-size: 17px;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
@@ -47,7 +47,6 @@
       padding: 28px 18px 60px;
     }
 
-    /* Header */
     header{
       display: flex;
       flex-direction: column;
@@ -68,54 +67,40 @@
     .logo{
       max-width: 280px;
       height: auto;
-      display: block;
-      margin: 0 auto;
     }
 
     .tagline{
-      margin: 0;
       font-size: 13px;
       color: var(--muted);
+      font-family: Inter, sans-serif;
     }
 
     nav{
       display: flex;
       gap: 16px;
-      font-size: 14px;
+      font-size: 15px;
       color: var(--muted);
-      justify-content: center;
-      flex-wrap: wrap;
+      font-family: Inter, sans-serif;
     }
 
-    /* Hero */
     .hero{
       padding: 52px 0 34px;
-      text-align: left;
     }
 
     .hero h1{
-      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
-      font-weight: 500;
+      font-family: "EB Garamond", serif;
       font-size: clamp(36px, 5.2vw, 62px);
-      line-height: 1.05;
-      margin: 0 0 14px;
-      letter-spacing: -0.01em;
+      margin-bottom: 14px;
     }
 
     .lede{
       max-width: 62ch;
-      font-size: 18px;
+      font-size: 19px;
       color: var(--muted);
-      margin: 0 0 22px;
     }
 
-    /* Sections */
     .grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 22px;
-      margin-top: 10px;
-      padding-top: 22px;
+      margin-top: 22px;
       border-top: 1px solid var(--hairline);
     }
 
@@ -123,446 +108,80 @@
       background: var(--card);
       border: 1px solid var(--hairline);
       border-radius: 16px;
-      padding: 18px 18px 16px;
+      padding: 18px;
+      margin-top: 22px;
     }
 
     .kicker{
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: .12em;
       text-transform: uppercase;
       color: var(--muted);
-      margin: 0 0 10px;
+      font-family: Inter, sans-serif;
     }
 
     .card h2{
-      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
-      font-weight: 500;
+      font-family: "EB Garamond", serif;
       font-size: 26px;
-      margin: 0 0 8px;
-      line-height: 1.15;
     }
 
     .card p{
-      margin: 0 0 12px;
+      font-size: 17px;
       color: var(--muted);
-      font-size: 15px;
     }
-
-    .list{
-      margin: 10px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 10px;
-    }
-
-    .list li{
-      padding-top: 10px;
-      border-top: 1px solid var(--hairline);
-    }
-    .list li:first-child{ border-top: none; padding-top: 0; }
 
     .label{
-      display: inline-block;
-      font-size: 12px;
-      letter-spacing: .10em;
-      text-transform: uppercase;
+      font-size: 13px;
+      font-family: Inter, sans-serif;
       color: var(--muted);
-      margin-bottom: 2px;
-    }
-
-    /* Article preview image */
-    .preview{
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 16px;
-      align-items: start;
-    }
-
-    .preview img{
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 1px solid var(--hairline);
-      display: block;
-    }
-
-    .preview .meta{
-      margin-top: 2px;
     }
 
     footer{
       margin-top: 34px;
       padding-top: 18px;
       border-top: 1px solid var(--hairline);
-      color: var(--muted);
       font-size: 13px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* Filter tabs */
-    .filter-bar{
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 18px;
-    }
-
-    .filter-btn{
-      background: none;
-      border: 1px solid var(--hairline);
-      border-radius: 999px;
-      padding: 6px 18px;
-      font-family: inherit;
-      font-size: 13px;
-      letter-spacing: .06em;
       color: var(--muted);
-      cursor: pointer;
-      transition: background .15s, color .15s, border-color .15s;
-    }
-
-    .filter-btn:hover{
-      border-color: var(--muted);
-      color: var(--ink);
-    }
-
-    .filter-btn.active{
-      background: var(--ink);
-      border-color: var(--ink);
-      color: var(--bg);
-    }
-
-    /* Mobile */
-    @media (max-width: 820px){
-      .hero{ padding: 40px 0 26px; }
-      .preview{ grid-template-columns: 1fr; }
-      .preview img{ height: 180px; }
-      footer{ justify-content: center; text-align: center; }
+      font-family: Inter, sans-serif;
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
+<div class="wrap">
 
-    <header>
-      <div class="masthead">
-        <img
-          src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/G-eJ_SkWkAA_P9J.jpg"
-          alt="The Astorian"
-          class="logo"
-        />
-        <p class="tagline">A journal of lasting prose.</p>
-      </div>
-
-     <nav aria-label="Primary">
-  <a href="#latest">Latest</a>
-  <a href="about.html">About</a>
-  <a href="#submissions">Submissions</a>
-  <a href="#contact">Contact</a>
-</nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <h1>A New Literary Journal</h1>
-        <p class="lede">
-          The Astorian is a new literary journal based in New York City. We seek to publish fiction, essays, and criticism grounded in structure and adherence to classical forms.
-        </p>
-      </section>
-
-      <section aria-label="Latest" id="latest">
-
-        <div class="filter-bar" role="group" aria-label="Filter articles by genre">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="prose">Prose</button>
-          <button class="filter-btn" data-filter="poetry">Poetry</button>
-          <button class="filter-btn" data-filter="essays">Essays</button>
-        </div>
-
-        <div class="grid" id="article-grid">
-          
-        <!-- Article preview card -->
-        <article class="card" data-genre="poetry">
-          <p class="kicker">Prose</p>
-
-          <div class="preview">
-            <a href="articles/trap.html" aria-label="Read Trap">
-              <img src="skunktrap.jpg" alt="Trap — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/trap.html">Trap</a>
-              </h2>
-              <p>
-                The house is tense and dark. She doesn’t look me in the eye anymore. 
-              </p>
-              <p class="label">By Marc Cozza · March 2026</p>
-            </div>
-          </div>
-        </article>
-        <!-- Article preview card -->
-        <article class="card" data-genre="poetry">
-          <p class="kicker">Poems</p>
-
-          <div class="preview">
-            <a href="articles/april-fool.html" aria-label="Read April Fool">
-              <img src="saffron.png" alt="April Fool — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/april-fool.html">April Fool</a>
-              </h2>
-              <p>
-                April cruelty uncommon/ Thy fetching glance invites my hand/ As if to turn the floor with thee
-              </p>
-              <p class="label">By Steve Bucher · March 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article preview card -->
-        <article class="card" data-genre="poetry">
-          <p class="kicker">Poems</p>
-
-          <div class="preview">
-            <a href="articles/ash-wednesday-after-ts-eliot.html" aria-label="Read Ash Wednesday After T.S. Eliot">
-              <img src="orion.jpg" alt="Ash Wednesday After T.S. Eliot — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/ash-wednesday-after-ts-eliot.html">Ash Wednesday, after T.S. Eliot</a>
-              </h2>
-              <p> I cannot repent for all of this. The river rising to bury the mountain, the newborn wailing unheard in the desert.
-              </p>
-              <p class="label">By Erika Takacs · March 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article preview card -->
-        <article class="card" data-genre="prose">
-          <p class="kicker">Prose</p>
-
-          <div class="preview">
-            <a href="articles/window-on-the-boulevard.html" aria-label="Read Window on the Boulevard">
-              <img src="suburbs.jpg" alt="Window on the Boulevard — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/window-on-the-boulevard.html">Window on the Boulevard</a>
-              </h2>
-              <p>
-                Fee Calder hadn't seen the woman in the modern house across the street for months. Fee initially watched the house because she didn't like it.
-              </p>
-              <p class="label">By Claire Bezdek Gochal · March 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article preview card -->
-        <article class="card" data-genre="poetry">
-          <p class="kicker">Poems</p>
-
-          <div class="preview">
-            <a href="articles/ash-wednesday.html" aria-label="Read Ash Wednesday">
-              <img src="ashes.jpeg" alt="Ash Wednesday — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/ash-wednesday.html">Ash Wednesday</a>
-              </h2>
-              <p>
-                Ashes on the subway, silent fraternity of the believing, the warmongers are building up their reserves, sending the tankers and the carriers into place.
-              </p>
-              <p class="label">By Nora Rawn · March 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article preview card -->
-        <article class="card" data-genre="poetry">
-          <p class="kicker">Poems</p>
-
-          <div class="preview">
-            <a href="articles/salotto.html" aria-label="Read Salotto">
-              <img src="cavalry.jpeg" alt="Salotto — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/salotto.html">Salotto</a>
-              </h2>
-              <p>
-                Look at your hand now, and intuit the difference between here an what stood straight to your right within a single glance.
-              </p>
-              <p class="label">By Anton Ivanov · March 2026</p>
-            </div>
-          </div>
-        </article>
-          
-         <!-- Article preview card -->
-        <article class="card" data-genre="prose">
-          <p class="kicker">Prose</p>
-
-          <div class="preview">
-            <a href="articles/clay-arthur.html" aria-label="Read Clay Arthur">
-              <img src="cowboy.jpg" alt="Clay Arthur — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/clay-arthur.html">Clay Arthur</a>
-              </h2>
-              <p>
-                When the earth eats you up as it is liable to in these parts you never really stop dying. You get swallowed up by God and you’ll just keep on dying over and over as the mud and the bugs reclaim you and make you theirs.
-              </p>
-              <p class="label">By Cecilia O'Mara · March 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article preview card -->
-        <article class="card" data-genre="poetry">
-          <p class="kicker">Poems</p>
-
-          <div class="preview">
-            <a href="articles/if-love-was-a-gentle-thing.html" aria-label="Read If Love Was a Gentle Thing">
-              <img src="pecan-tree.jpg" alt="If Love Was a Gentle Thing — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/if-love-was-a-gentle-thing.html">If Love Was a Gentle Thing</a>
-              </h2>
-              <p>
-                I remember what you said by the pecan tree: there ain't nobody here but us Gods.
-              </p>
-              <p class="label">By Kitty Saint-Remy · March 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article preview card -->
-        <article class="card" data-genre="essays">
-          <p class="kicker">Essays</p>
-
-          <div class="preview">
-            <a href="articles/they-long-to-be-close-to-you.html" aria-label="Read (They Long To Be) Close To You">
-              <img src="superstar-karen-carpenter.jpg" alt="(They Long To Be) Close To You — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/they-long-to-be-close-to-you.html">(They Long To Be) Close To You</a>
-              </h2>
-              <p>
-                The horror, sincerity, and dissociative miasma of 20th century womanhood writ in Todd Haynes' <em>Superstar: The Karen Carpenter Story</em>.
-              </p>
-              <p class="label">By Audrey Robinovitz · March 2026</p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Article preview card -->
-        <article class="card" data-genre="prose">
-          <p class="kicker">Prose</p>
-
-          <div class="preview">
-            <a href="articles/the-old-dispensation.html" aria-label="Read The Old Dispensation">
-              <img src="christmas.png" alt="The Old Dispensation — preview image">
-            </a>
-
-            <div class="meta">
-              <h2>
-                <a href="articles/the-old-dispensation.html">The Old Dispensation</a>
-              </h2>
-              <p>
-                There was a Birth, certainly. We had evidence and no doubt. I had seen birth and death, but had thought they were different; this Birth was Hard and bitter agony for us, like Death, our death.
-              </p>
-              <p class="label">By Naomi Leigh · February 2026</p>
-            </div>
-          </div>
-        </article>
-
-        </div><!-- /.grid -->
-
-        <p class="no-results" style="display:none; color:var(--muted); font-size:15px; padding:18px 0;">No articles in this category yet.</p>
-
-      </section>
-
-      <!-- Submissions card -->
-      <aside class="card" id="submissions" style="margin-top:22px;">
-        <p class="kicker">Submissions</p>
-        <ul class="list">
-          <li>
-            <span class="label">What we read</span><br />
-            Fiction (prose and poetry), essays, and criticism.
-          </li>
-          <li>
-            <span class="label">Status</span><br />
-            <strong>Open.</strong> We are currently accepting public submissions for digital and print, compliant with our guidelines <a href="about.html"><b>here</b></a>. A portion will be donated to <a href="https://www.episcopalcharities-newyork.org" target="_blank">Episcopal Charities of New York.</a>
-
-            Accepted submissions will receive a stipend.  If we are interested in publishing your work, you will hear from us within three weeks. Due to the volume of submissions, we can only reply to those whose work has been accepted.
-          </li>
-        </ul>
-      </aside>
-
-      <section class="card" id="contact" style="margin-top:22px;">
-        <p class="kicker">Contact</p>
-        <h2>Editorial correspondence</h2>
-        <p>
-          <a href="mailto:naomileigh@theastorian.net">naomileigh@theastorian.net</a>
-          <br />
-          <span style="color: var(--muted);">Please include “The Astorian” in the subject line.</span>
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <span>© <span id="year"></span> The Astorian. All rights reserved.</span>
-      <span><a href="https://theastorian.net">theastorian.net</a></span>
-    </footer>
+<header>
+  <div class="masthead">
+    <img src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/G-eJ_SkWkAA_P9J.jpg" class="logo"/>
+    <p class="tagline">A journal of lasting prose.</p>
   </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+  <nav>
+    <a href="#latest">Latest</a>
+    <a href="about.html">About</a>
+    <a href="#submissions">Submissions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    // Genre filtering
-    const filterBtns = document.querySelectorAll(".filter-btn");
-    const articles   = document.querySelectorAll("#article-grid article[data-genre]");
-    const noResults  = document.querySelector(".no-results");
+<main>
+<section class="hero">
+  <h1>A New Literary Journal</h1>
+  <p class="lede">
+    The Astorian is a new literary journal based in New York City. We seek to publish fiction, essays, and criticism grounded in structure and adherence to classical forms.
+  </p>
+</section>
+</main>
 
-    filterBtns.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const filter = btn.dataset.filter;
+<footer>
+  © <span id="year"></span> The Astorian
+</footer>
 
-        // Update active button
-        filterBtns.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
+</div>
 
-        // Show / hide articles
-        let visible = 0;
-        articles.forEach(article => {
-          const match = filter === "all" || article.dataset.genre === filter;
-          article.style.display = match ? "" : "none";
-          if (match) visible++;
-        });
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-        // Show "no results" message if needed
-        noResults.style.display = visible === 0 ? "" : "none";
-      });
-    });
-  </script>
 </body>
 </html>
