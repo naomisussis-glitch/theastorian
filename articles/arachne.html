@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arachne — The Astorian</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #f6f2e8;
+      --ink: #121212;
+      --muted: rgba(18,18,18,.72);
+      --hairline: rgba(18,18,18,.14);
+      --card: rgba(255,255,255,.78);
+      --max: 980px;
+    }
+    *{ box-sizing:border-box; }
+    body{ margin:0; background:var(--bg); color:var(--ink); font-family:"EB Garamond",Garamond,"Times New Roman",Times,serif; font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+    a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--hairline); }
+    a:hover{ border-bottom-color:var(--muted); }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:28px 18px 60px; }
+    header{ display:flex; flex-direction:column; align-items:center; gap:14px; padding:18px 0 22px; border-bottom:1px solid var(--hairline); text-align:center; }
+    .logo{ max-width:280px; height:auto; display:block; margin:0 auto; }
+    nav{ display:flex; gap:16px; font-size:14px; color:var(--muted); justify-content:center; }
+    .article{ padding:38px 0 18px; max-width:72ch; }
+    .article h1{ font-family:"EB Garamond",Garamond,"Times New Roman",Times,serif; font-weight:500; font-size:clamp(34px,4.6vw,54px); line-height:1.08; margin:0 0 16px; }
+    .byline{ color:var(--muted); margin:0 0 22px; font-size:14px; }
+    .rule{ border-top:1px solid var(--hairline); margin:18px 0; }
+    .hero-img{ width:100%; height:auto; display:block; margin:0 0 32px; border-radius:8px; }
+    .poem{ font-family:"EB Garamond",Garamond,"Times New Roman",Times,serif; font-size:clamp(17px,2vw,20px); line-height:1.75; color:var(--ink); margin:0 0 16px; white-space:pre-wrap; }
+    .bio{ font-size:14px; color:var(--muted); font-style:italic; margin:0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="https://theastorian.net" aria-label="Back to The Astorian home">
+        <img src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/G-eJ_SkWkAA_P9J.jpg" alt="The Astorian" class="logo">
+      </a>
+      <nav aria-label="Primary">
+        <a href="https://theastorian.net#submissions">Submissions</a>
+        <a href="https://theastorian.net#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="article">
+      <p style="margin:0 0 10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-size:12px;">Poems</p>
+      <h1>Arachne</h1>
+      <p class="byline">By D. Eric Parkison · April 2026</p>
+      <div class="rule"></div>
+
+      <img src="../spider.jpg" alt="Arachne — illustration" class="hero-img">
+
+      <p class="poem">I know the spider in the fire pit,
+There, scrambling along the circle of steel,
+Will be past my tracking gaze soon, the heat
+Will have its way with it before its will
+
+Will have inspired the frantic escape:
+The needles have caught, twigs are traced in flame.
+Arachnid below all notice now, its lap
+Not incomplete but unrecorded—blame
+
+Our scale, the voices in the dark across
+The ring whose cadence indicates my thoughts
+On what to do are wanted. Someone cares
+To catch a word from me. Two urns, the plots,
+
+I think, without thinking the words. Two graves,
+Etched stone. Who will let us down that day?
+I toe the embers, watch shimmering waves
+Of heat flow up. The wood is dry and grey
+
+As ash. I prepare my report and dip
+To push my glasses up my nose. My eyes,
+Their eight small lenses moving in one group,
+Observe the night and set out my surmise.</p>
+
+      <div class="rule"></div>
+      <p class="bio">D. Eric Parkison is the author of a chapbook, <em>No Arcadia</em>, and recipient of a 2022 Massachusetts Cultural Council grant in poetry. He is director of programming at the Gloucester Writers Center and lives in Lynn, MA. Find him at deparkison.com.</p>
+    </main>
+  </div>
+</body>
+</html>
