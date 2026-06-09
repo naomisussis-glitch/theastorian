@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shop — Purchase the Summer 2026 Edition of The Astorian." />
+  <title>Shop — The Astorian</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #f6f2e8;
+      --ink: #121212;
+      --muted: rgba(18,18,18,.72);
+      --hairline: rgba(18,18,18,.14);
+      --card: rgba(255,255,255,.78);
+      --max: 980px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+
+    body{
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--hairline);
+    }
+    a:hover{ border-bottom-color: var(--muted); }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    /* Header */
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 0 22px;
+      border-bottom: 1px solid var(--hairline);
+      text-align: center;
+    }
+
+    .masthead{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo{
+      max-width: 280px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .tagline{
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav{
+      display: flex;
+      gap: 16px;
+      font-size: 16px;
+      color: var(--muted);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a.active{
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* Shop layout */
+    .shop-section{
+      padding: 52px 0 34px;
+    }
+
+    .shop-section h1{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: clamp(32px, 4.5vw, 52px);
+      line-height: 1.08;
+      margin: 0 0 36px;
+      letter-spacing: -0.01em;
+    }
+
+    .product{
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 52px;
+      align-items: start;
+    }
+
+    .product-cover{
+      position: sticky;
+      top: 24px;
+    }
+
+    .product-cover img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid var(--hairline);
+      border-radius: 4px;
+      box-shadow: 0 8px 32px rgba(18,18,18,.10);
+    }
+
+    .product-info{
+      padding-top: 6px;
+    }
+
+    .kicker{
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .product-title{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: clamp(26px, 3vw, 38px);
+      margin: 0 0 8px;
+      line-height: 1.1;
+    }
+
+    .product-subtitle{
+      font-size: 18px;
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+
+    .product-description{
+      font-size: 17px;
+      color: var(--muted);
+      margin: 0 0 32px;
+      max-width: 52ch;
+      border-top: 1px solid var(--hairline);
+      padding-top: 20px;
+    }
+
+    .product-description p{
+      margin: 0 0 14px;
+    }
+
+    .product-description p:last-child{
+      margin-bottom: 0;
+    }
+
+    .buy-btn{
+      display: inline-block;
+      background: var(--ink);
+      color: var(--bg);
+      border: none;
+      border-bottom: none;
+      border-radius: 4px;
+      padding: 14px 34px;
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-size: 17px;
+      letter-spacing: .04em;
+      cursor: pointer;
+      transition: opacity .15s;
+      text-decoration: none;
+    }
+
+    .buy-btn:hover{
+      opacity: .82;
+      border-bottom: none;
+    }
+
+    .price{
+      display: block;
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    footer{
+      margin-top: 60px;
+      padding-top: 18px;
+      border-top: 1px solid var(--hairline);
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (max-width: 720px){
+      .product{
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .product-cover{
+        position: static;
+        max-width: 280px;
+      }
+      .shop-section{ padding: 36px 0 24px; }
+      footer{ justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="masthead">
+        <img
+          src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/astorianlogo.png"
+          alt="The Astorian"
+          class="logo"
+        />
+        <p class="tagline">A journal of lasting prose.</p>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="index.html">Latest</a>
+        <a href="about.html">About</a>
+        <a href="index.html#submissions">Submissions</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="shop.html" class="active">Shop</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="shop-section">
+        <h1>Shop</h1>
+
+        <div class="product">
+          <div class="product-cover">
+            <img src="Astoriancover.png" alt="The Astorian — Summer 2026 Edition cover" />
+          </div>
+
+          <div class="product-info">
+            <p class="kicker">Now Available</p>
+            <h2 class="product-title">The Astorian</h2>
+            <p class="product-subtitle">Summer 2026 Edition</p>
+
+            <div class="product-description">
+              <p>The Summer 2026 Edition of <em>The Astorian</em> — our first print issue — collects new fiction, poetry, and essays from writers across the country.</p>
+              <p>Printed and bound in the United States. Ships within two weeks of purchase.</p>
+            </div>
+
+            <span class="price">$20.00</span>
+            <a
+              href="https://buy.stripe.com/14AdRb6MreXdeuG7ACaEE01"
+              class="buy-btn"
+              target="_blank"
+              rel="noopener"
+            >Purchase</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> The Astorian. All rights reserved.</span>
+      <span style="display:flex; gap:14px; align-items:center;">
+        <a href="https://instagram.com/theastorianjournal" target="_blank" rel="noopener" aria-label="Instagram" style="border-bottom:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://x.com/astorianjournal" target="_blank" rel="noopener" aria-label="X (Twitter)" style="border-bottom:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://theastorian.net">theastorian.net</a>
+      </span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
