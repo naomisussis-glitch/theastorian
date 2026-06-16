@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Patrons of The Astorian — support a journal of lasting prose." />
+  <title>Patrons — The Astorian</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #f6f2e8;
+      --ink: #121212;
+      --muted: rgba(18,18,18,.72);
+      --hairline: rgba(18,18,18,.14);
+      --card: rgba(255,255,255,.78);
+      --max: 980px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+
+    body{
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid var(--hairline);
+    }
+    a:hover{ border-bottom-color: var(--muted); }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    /* Header */
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 0 22px;
+      border-bottom: 1px solid var(--hairline);
+      text-align: center;
+    }
+
+    .masthead{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo{
+      max-width: 280px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .tagline{
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav{
+      display: flex;
+      gap: 16px;
+      font-size: 16px;
+      color: var(--muted);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a.active{
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    /* Page layout */
+    .page-section{
+      padding: 52px 0 34px;
+    }
+
+    .page-section h1{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: clamp(32px, 4.5vw, 52px);
+      line-height: 1.08;
+      margin: 0 0 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .kicker{
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .lede{
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 64ch;
+      margin: 0 0 40px;
+    }
+
+    /* Patron list */
+    .patron-roll{
+      border-top: 1px solid var(--hairline);
+      padding-top: 32px;
+      margin-bottom: 48px;
+    }
+
+    .patron-roll h2{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: 28px;
+      margin: 0 0 20px;
+    }
+
+    .patron-tier{
+      margin-bottom: 28px;
+    }
+
+    .patron-tier h3{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: 21px;
+      margin: 0 0 6px;
+    }
+
+    .patron-tier p{
+      color: var(--muted);
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* Patronage levels */
+    .levels{
+      border-top: 1px solid var(--hairline);
+      padding-top: 32px;
+      margin-bottom: 48px;
+    }
+
+    .levels h2{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: 28px;
+      margin: 0 0 24px;
+    }
+
+    .level-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .level-card{
+      background: var(--card);
+      border: 1px solid var(--hairline);
+      border-radius: 16px;
+      padding: 22px 20px 20px;
+    }
+
+    .level-card h3{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: 22px;
+      margin: 0 0 2px;
+    }
+
+    .level-price{
+      font-size: 15px;
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+
+    .level-desc{
+      font-size: 15px;
+      color: var(--muted);
+      margin: 0 0 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--hairline);
+    }
+
+    .level-perks{
+      list-style: none;
+      margin: 0 0 20px;
+      padding: 0;
+      font-size: 15px;
+      color: var(--muted);
+      display: grid;
+      gap: 6px;
+    }
+
+    .level-perks li::before{
+      content: "— ";
+      color: var(--hairline);
+    }
+
+    /* Stripe buttons */
+    .stripe-btn{
+      display: block;
+      width: 100%;
+      background: var(--ink);
+      color: var(--bg);
+      border: none;
+      border-bottom: none;
+      border-radius: 4px;
+      padding: 12px 20px;
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-size: 16px;
+      letter-spacing: .03em;
+      cursor: pointer;
+      text-align: center;
+      transition: opacity .15s;
+    }
+
+    .stripe-btn:hover{
+      opacity: .82;
+      border-bottom: none;
+    }
+
+    /* Become a patron CTA */
+    .cta{
+      border-top: 1px solid var(--hairline);
+      padding-top: 32px;
+    }
+
+    .cta h2{
+      font-family: "EB Garamond", Garamond, "Times New Roman", Times, serif;
+      font-weight: 500;
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    .cta p{
+      color: var(--muted);
+      margin: 0 0 24px;
+      max-width: 58ch;
+    }
+
+    footer{
+      margin-top: 60px;
+      padding-top: 18px;
+      border-top: 1px solid var(--hairline);
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (max-width: 720px){
+      .level-grid{
+        grid-template-columns: 1fr;
+      }
+      .page-section{ padding: 36px 0 24px; }
+      footer{ justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <div class="masthead">
+        <img
+          src="https://raw.githubusercontent.com/naomisussis-glitch/theastorian/main/astorianlogo.png"
+          alt="The Astorian"
+          class="logo"
+        />
+        <p class="tagline">A journal of lasting prose.</p>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="index.html">Latest</a>
+        <a href="about.html">About</a>
+        <a href="index.html#submissions">Submissions</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="shop.html">Shop</a>
+        <a href="patrons.html" class="active">Patrons</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-section">
+        <h1>Patrons of The Astorian</h1>
+        <p class="lede">
+          The Astorian exists because readers, writers, and patrons believe that good literature remains worth cultivating. In an age of haste and distraction, we are committed to publishing work built to endure: stories, poems, essays, and criticism marked by craftsmanship, beauty, and seriousness of purpose. Patron support allows us to compensate contributors, maintain our publication, and continue providing a home for literature with a proclivity for the old.
+        </p>
+        <p class="lede" style="margin-top: -22px;">
+          We extend our sincere thanks to the individuals listed below, whose generosity helps sustain our work.
+        </p>
+      </section>
+
+      <!-- Patron roll -->
+      <section class="patron-roll">
+        <h2>Our Patrons</h2>
+        <div class="patron-tier">
+          <h3>Benefactors</h3>
+          <p>[Names]</p>
+        </div>
+        <div class="patron-tier">
+          <h3>Supporting Patrons</h3>
+          <p>[Names]</p>
+        </div>
+      </section>
+
+      <!-- Patronage levels -->
+      <section class="levels">
+        <h2>Patronage Levels</h2>
+        <div class="level-grid">
+
+          <div class="level-card">
+            <h3>Friend of The Astorian</h3>
+            <p class="level-price">$5 / month</p>
+            <p class="level-desc">For readers who wish to support the journal and its mission.</p>
+            <ul class="level-perks">
+              <li>Advanced updates and journal news</li>
+            </ul>
+            <a
+              href="https://buy.stripe.com/14A14p5In3ev1HUbQSaEE03"
+              class="stripe-btn"
+              target="_blank"
+              rel="noopener"
+            >Become a Friend</a>
+          </div>
+
+          <div class="level-card">
+            <h3>Supporting Patron</h3>
+            <p class="level-price">$15 / month</p>
+            <p class="level-desc">For those who wish to play a larger role in sustaining the publication.</p>
+            <ul class="level-perks">
+              <li>Recognition on our Patrons page</li>
+              <li>Advanced updates and journal news</li>
+              <li>Invitations to Astorian readings and soirees</li>
+            </ul>
+            <a
+              href="https://buy.stripe.com/7sY4gB6Mrg1h1HU8EGaEE04"
+              class="stripe-btn"
+              target="_blank"
+              rel="noopener"
+            >Become a Supporting Patron</a>
+          </div>
+
+          <div class="level-card">
+            <h3>Benefactor</h3>
+            <p class="level-price">$50 / month</p>
+            <p class="level-desc">For those whose generosity provides meaningful support for the future of the journal.</p>
+            <ul class="level-perks">
+              <li>Recognition on our Patrons page</li>
+              <li>One free copy of all print editions</li>
+              <li>Invitations to Astorian readings and soirees, including a +1</li>
+              <li>Special acknowledgment in the annual print edition</li>
+              <li>Advanced updates and journal news</li>
+            </ul>
+            <a
+              href="https://buy.stripe.com/aFa14p3Af2ar4U64oqaEE05"
+              class="stripe-btn"
+              target="_blank"
+              rel="noopener"
+            >Become a Benefactor</a>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> The Astorian. All rights reserved.</span>
+      <span style="display:flex; gap:14px; align-items:center;">
+        <a href="https://instagram.com/theastorianjournal" target="_blank" rel="noopener" aria-label="Instagram" style="border-bottom:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://x.com/astorianjournal" target="_blank" rel="noopener" aria-label="X (Twitter)" style="border-bottom:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://theastorian.net">theastorian.net</a>
+      </span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
