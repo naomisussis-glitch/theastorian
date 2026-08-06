@@ -19,7 +19,7 @@
       --hairline: rgba(18,18,18,.14);
       --card: rgba(255,255,255,.78);
       --max: 980px;
-    } 
+    }
 
     *{ box-sizing: border-box; }
     html, body{ height: 100%; }
@@ -236,6 +236,45 @@
       background: var(--ink);
       border-color: var(--ink);
       color: var(--bg);
+    }
+
+    /* Pagination */
+    .pagination{
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 26px;
+    }
+
+    .page-btn{
+      background: none;
+      border: 1px solid var(--hairline);
+      border-radius: 999px;
+      min-width: 36px;
+      padding: 6px 12px;
+      font-family: inherit;
+      font-size: 14px;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background .15s, color .15s, border-color .15s;
+    }
+
+    .page-btn:hover:not(:disabled){
+      border-color: var(--muted);
+      color: var(--ink);
+    }
+
+    .page-btn.active{
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--bg);
+    }
+
+    .page-btn:disabled{
+      opacity: .4;
+      cursor: default;
     }
 
     /* Mobile */
@@ -1216,6 +1255,8 @@
 
         <p class="no-results" style="display:none; color:var(--muted); font-size:15px; padding:18px 0;">No articles in this category yet.</p>
 
+        <nav class="pagination" id="pagination" aria-label="Article pages"></nav>
+
       </section>
 
       <!-- Submissions card -->
@@ -1266,31 +1307,69 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Genre filtering
+    // Genre filtering + pagination
+    const PER_PAGE   = 10;
     const filterBtns = document.querySelectorAll(".filter-btn");
-    const articles   = document.querySelectorAll("#article-grid article[data-genre]");
+    const articles   = Array.from(document.querySelectorAll("#article-grid article[data-genre]"));
     const noResults  = document.querySelector(".no-results");
+    const pagination = document.getElementById("pagination");
+
+    let currentFilter = "all";
+    let currentPage   = 1;
+
+    function getMatching(){
+      return articles.filter(a =>
+        currentFilter === "all" || a.dataset.genre.toLowerCase() === currentFilter
+      );
+    }
+
+    function render(){
+      const matching   = getMatching();
+      const totalPages = Math.max(1, Math.ceil(matching.length / PER_PAGE));
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const start = (currentPage - 1) * PER_PAGE;
+      const pageItems = matching.slice(start, start + PER_PAGE);
+
+      articles.forEach(a => { a.style.display = pageItems.includes(a) ? "" : "none"; });
+      noResults.style.display = matching.length === 0 ? "" : "none";
+
+      // Build pagination controls
+      pagination.innerHTML = "";
+      if (totalPages <= 1) return;
+
+      const makeBtn = (label, page, opts = {}) => {
+        const b = document.createElement("button");
+        b.className = "page-btn" + (opts.active ? " active" : "");
+        b.textContent = label;
+        b.disabled = !!opts.disabled;
+        if (opts.ariaLabel) b.setAttribute("aria-label", opts.ariaLabel);
+        b.addEventListener("click", () => {
+          currentPage = page;
+          render();
+          document.getElementById("latest").scrollIntoView({ behavior: "smooth" });
+        });
+        return b;
+      };
+
+      pagination.appendChild(makeBtn("‹ Prev", currentPage - 1, { disabled: currentPage === 1, ariaLabel: "Previous page" }));
+      for (let p = 1; p <= totalPages; p++){
+        pagination.appendChild(makeBtn(String(p), p, { active: p === currentPage, ariaLabel: "Page " + p }));
+      }
+      pagination.appendChild(makeBtn("Next ›", currentPage + 1, { disabled: currentPage === totalPages, ariaLabel: "Next page" }));
+    }
 
     filterBtns.forEach(btn => {
       btn.addEventListener("click", () => {
-        const filter = btn.dataset.filter;
-
-        // Update active button
+        currentFilter = btn.dataset.filter;
+        currentPage = 1;
         filterBtns.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-
-        // Show / hide articles
-        let visible = 0;
-        articles.forEach(article => {
-          const match = filter === "all" || article.dataset.genre === filter;
-          article.style.display = match ? "" : "none";
-          if (match) visible++;
-        });
-
-        // Show "no results" message if needed
-        noResults.style.display = visible === 0 ? "" : "none";
+        render();
       });
     });
+
+    render();
   </script>
 </body>
 </html>
