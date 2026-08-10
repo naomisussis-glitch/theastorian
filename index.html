@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="The Astorian is a literary journal devoted to lasting prose." />
   <title>The Astorian</title>
-  <!-- OWL AND BUN 5EVER!!!--> 
+  <!-- OWL AND BUN 5EVER!!!-->
   <!-- Classic serif pair -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
-    :root{ 
+    :root{
       --bg: #f6f2e8;
       --ink: #121212;
       --muted: rgba(18,18,18,.72);
       --hairline: rgba(18,18,18,.14);
       --card: rgba(255,255,255,.78);
       --max: 980px;
-    } 
+    }
 
     *{ box-sizing: border-box; }
     html, body{ height: 100%; }
@@ -46,7 +46,7 @@
       max-width: var(--max);
       margin: 0 auto;
       padding: 8px 18px 60px;
-    } 
+    }
 
     /* Header */
     header{
@@ -328,6 +328,27 @@
         </div>
 
         <div class="grid" id="article-grid">
+
+        <!-- Article preview card -->
+        <article class="card" data-genre="poetry">
+          <p class="kicker">Poems</p>
+
+          <div class="preview">
+            <a href="articles/animal-planet.html" aria-label="Read animal planet">
+              <img src="animalplanet.jpg" alt="animal planet — preview image">
+            </a>
+
+            <div class="meta">
+              <h2>
+                <a href="articles/animal-planet.html">animal planet</a>
+              </h2>
+              <p>
+                new mammal upgrade. endorphins! i moan / until april. starve myself into last year's jeans. / absorb the backyard sun like a blade
+              </p>
+              <p class="label">By Taha Ahmar Qadeer · August 2026</p>
+            </div>
+          </div>
+        </article>
 
         <!-- Article preview card -->
         <article class="card" data-genre="poetry">
