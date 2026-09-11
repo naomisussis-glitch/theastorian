@@ -330,6 +330,27 @@
         <div class="grid" id="article-grid">
 
         <!-- Article preview card -->
+        <article class="card" data-genre="prose">
+          <p class="kicker">Prose</p>
+
+          <div class="preview">
+            <a href="articles/next-steps.html" aria-label="Read Next Steps">
+              <img src="newton.jpg" alt="Next Steps — preview image">
+            </a>
+
+            <div class="meta">
+              <h2>
+                <a href="articles/next-steps.html">Next Steps</a>
+              </h2>
+              <p>
+                Her hand shaking, Alex peered into the mirror to tweeze off the last of her glued-on eyelashes. Maddening how one lash stood straight up, refusing to be plucked off.
+              </p>
+              <p class="label">By Patricia Pasick · September 2026</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article preview card -->
         <article class="card" data-genre="poetry">
           <p class="kicker">Poems</p>
 
@@ -1557,29 +1578,4 @@
         b.addEventListener("click", () => {
           currentPage = page;
           render();
-          document.getElementById("latest").scrollIntoView({ behavior: "smooth" });
-        });
-        return b;
-      };
-
-      pagination.appendChild(makeBtn("‹ Prev", currentPage - 1, { disabled: currentPage === 1, ariaLabel: "Previous page" }));
-      for (let p = 1; p <= totalPages; p++){
-        pagination.appendChild(makeBtn(String(p), p, { active: p === currentPage, ariaLabel: "Page " + p }));
-      }
-      pagination.appendChild(makeBtn("Next ›", currentPage + 1, { disabled: currentPage === totalPages, ariaLabel: "Next page" }));
-    }
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener("click", () => {
-        currentFilter = btn.dataset.filter;
-        currentPage = 1;
-        filterBtns.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        render();
-      });
-    });
-
-    render();
-  </script>
-</body>
-</html>
+          document.getElementById("latest").scrollIntoView({ behavior: 
