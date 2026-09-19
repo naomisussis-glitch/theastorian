@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Shop — Purchase the Summer 2026 Edition of The Astorian." />
+  <meta name="description" content="Shop — Purchase the Fall/Winter 2026 and Summer 2026 Editions of The Astorian." />
   <title>Shop — The Astorian</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -198,6 +198,19 @@
       margin-bottom: 20px;
     }
 
+    .price .ship{
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    /* Space and hairline between stacked editions */
+    .product + .product{
+      margin-top: 56px;
+      padding-top: 56px;
+      border-top: 1px solid var(--hairline);
+    }
+
     footer{
       margin-top: 60px;
       padding-top: 18px;
@@ -254,6 +267,31 @@
 
         <div class="product">
           <div class="product-cover">
+            <img src="FallWinterCover.jpg" alt="The Astorian — Fall/Winter 2026 Edition cover" />
+          </div>
+
+          <div class="product-info">
+            <p class="kicker">Now Available</p>
+            <h2 class="product-title">The Astorian</h2>
+            <p class="product-subtitle">Fall/Winter 2026 Edition</p>
+
+            <div class="product-description">
+              <p>The Fall/Winter 2026 Edition of <em>The Astorian</em> collects new fiction, poetry, and essays from writers across the world.</p>
+              <p>Printed and bound in the United States. Ships within one week of purchase.</p>
+            </div>
+
+            <span class="price">$22.00 <span class="ship">plus shipping</span></span>
+            <a
+              href="https://buy.stripe.com/cNi5kF8UzaGX2LY9IKaEE06"
+              class="buy-btn"
+              target="_blank"
+              rel="noopener"
+            >Purchase</a>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="product-cover">
             <img src="Astoriancover.png" alt="The Astorian — Summer 2026 Edition cover" />
           </div>
 
@@ -263,11 +301,11 @@
             <p class="product-subtitle">Summer 2026 Edition</p>
 
             <div class="product-description">
-              <p>Our debut Summer 2026 Edition of <em>The Astorian</em> collects new fiction, poetry, and essays from writers across the country.</p>
-              <p>Printed and bound in the United States. Ships within two weeks of purchase.</p>
+              <p>The Summer 2026 Edition of <em>The Astorian</em> — our first print issue — collects new fiction, poetry, and essays from writers across the country.</p>
+              <p>Printed and bound in the United States. Ships within one week of purchase.</p>
             </div>
 
-            <span class="price">$22.00 + Shipping</span>
+            <span class="price">$15.00 <span class="ship">plus shipping</span></span>
             <a
               href="https://buy.stripe.com/14AdRb6MreXdeuG7ACaEE01"
               class="buy-btn"
